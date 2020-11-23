@@ -18,47 +18,27 @@
          #firstbox{
               grid-area:first;
               height:450px;
-              /* width:fit-content;  */
                /* border:2px solid red;  */
               max-height:fit-content;
          }
 
          #secbox{
             grid-area:sec;
-            height:400px;
+            height:450px;
              /* border:2px solid green;  */
             max-height:fit-content;
 
          }
-         /* .secpart-img{
-           height:100%;
-           width:fit-content;
-           
-         } */
-         /* .firstdiv{
-            height:60%;  
-             width:100%;  */
-         /* } */
+        
          .firstimg{
-             /* height:fit-content;   */
              width:100%; 
              object-fit: contain; 
-              /* overflow: hidden;   */
-             /* background-image:url("https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg");
-            
-             background-size:contain;
-             background-repeat: no-repeat; */
-
          }
          .seconddiv{
-             /* padding:28px 28px 36px; */
              height:40%;
-             /* width:100%; */
              max-width:fit-content;
              margin:auto;
-             object-fit: contain;
-             
-            
+             object-fit: contain;      
          }
         
          .seconddiv > p,.seconddiv > h2{
@@ -71,25 +51,14 @@
          .seconddiv > p{
              font-size: 20px;
          }
-         #firstbutton{
+         .firstbutton{
              height:40px;
-             width:50%;
+             width:159.96px;
              border:2px solid blue;
              color:blue;
-             margin-left:25%; 
-            
+             margin-left:25%;     
          }
-         #secondbutton{
-            height:40px;
-             width:43%;
-             border:2px solid blue;
-             color:blue;
-             margin-left:25%; 
-            
-         }
-         #seconddiv{
-             height:35%;
-         }
+      
          
         
 
@@ -128,6 +97,7 @@
     #second{
         grid-template-areas: "first sec"
     }
+   
 }
 </style>
     </head>
@@ -139,19 +109,17 @@
          <div class="seconddiv" id="seconddiv">
              <h2><strong>SendGrid API</strong></h2>
              <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
-             <button id="firstbutton">Learn More</button>
+             <button class="firstbutton">Learn More</button>
             </div>
-        
+            <!-- id="seconddiv" -->
          </div>
 
             <div id="secbox">
-            <!-- <div class="firstdiv"> -->
-            <img class="firstimg" src="https://d15tnd3q55f8nl.cloudfront.net/static/5b9d1c6b7f2285dfd9b0c7e1cb2d3730/a3ad1/image-solutions-mc-box-v3.jpg"/>
-            <!-- </div> -->
+            <img class="firstimg" src="https://d15tnd3q55f8nl.cloudfront.net/static/5b9d1c6b7f2285dfd9b0c7e1cb2d3730/a3ad1/image-solutions-mc-box-v3.jpg"/>   
             <div class="seconddiv">
                 <h2><strong>SendGrid Marketing Campaigns</strong></h2>
                 <p>Build meaningful connections with smart<br/><strong>email Marketing.</strong></p>
-                <button id="secondbutton">Learn More</button>
+                <button class="firstbutton">Learn More</button>
                </div>
         </div>
       
@@ -159,9 +127,7 @@
         
         <script type="text/javascript">
          //secpart
-         var firstdiv = document.getElementById("firstdiv")
-        //  firstdiv.setAttribute("background-image","https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg")
-        //  firstimg.setAttribute("class","secpart-img")
+         var firstdiv = document.getElementById("firstdiv");
         </script>
         
         
