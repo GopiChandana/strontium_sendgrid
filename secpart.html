@@ -17,14 +17,14 @@
          }
          #firstbox{
               grid-area:first;
-              height:450px;
+              height:490px;
                /* border:2px solid red;  */
               max-height:fit-content;
          }
 
          #secbox{
             grid-area:sec;
-            height:450px;
+            height:490px;
              /* border:2px solid green;  */
             max-height:fit-content;
 
@@ -56,10 +56,13 @@
              width:159.96px;
              border:2px solid blue;
              color:blue;
-             margin-left:25%;     
+             margin-left:25%; 
+             border-radius: 5px;  
+             font-weight: bolder; 
+             font-size: 20px; 
          }
-      
-         
+        
+   
         
 
 /* Extra small devices (phones, 600px and down) */
@@ -105,29 +108,79 @@
         <div id="second">
 
          <div id="firstbox">
-         <img class="firstimg"  src="https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg"/>
-         <div class="seconddiv" id="seconddiv">
-             <h2><strong>SendGrid API</strong></h2>
-             <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
+            <img class="firstimg"  src="https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg"/>
+            <div class="seconddiv" id="secdiv12">
+              <h2><strong>SendGrid API</strong></h2>
+              <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
              <button class="firstbutton">Learn More</button>
-            </div>
-            <!-- id="seconddiv" -->
+           </div>
          </div>
 
-            <div id="secbox">
+         <div id="secbox">
             <img class="firstimg" src="https://d15tnd3q55f8nl.cloudfront.net/static/5b9d1c6b7f2285dfd9b0c7e1cb2d3730/a3ad1/image-solutions-mc-box-v3.jpg"/>   
-            <div class="seconddiv">
+            <div class="seconddiv" id="secdiv22">
                 <h2><strong>SendGrid Marketing Campaigns</strong></h2>
                 <p>Build meaningful connections with smart<br/><strong>email Marketing.</strong></p>
-                <button class="firstbutton">Learn More</button>
-               </div>
-        </div>
+                <button id="last"class="firstbutton">Learn More</button>
+            </div>
+         </div>
       
-    </div>
+     </div>
         
         <script type="text/javascript">
-         //secpart
-         var firstdiv = document.getElementById("firstdiv");
+        var firstbutton = document.querySelector("button");
+        var secbutton=document.querySelector("#last");
+        var secdiv12=document.querySelector("#secdiv12");
+        var secdiv22=document.querySelector("#secdiv22");
+        var firstbox=document.querySelector("#firstbox");
+        var secbox=document.querySelector("#secbox");
+
+        function change1()
+        {
+           
+            console.log(firstbutton)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="navy"
+            firstbutton.style.borderColor="navy"
+            firstbox.style.background="rgba(224, 233, 247, 0.795)"
+        }
+        function change2()
+        {
+           
+            console.log(secbutton)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="navy"
+            secbutton.style.borderColor="navy"
+            secbox.style.background="rgba(224, 233, 247, 0.795)"
+
+        }
+
+        firstbutton.addEventListener("mouseover",change1)
+        secbutton.addEventListener("mouseover",change2)
+       
+        function change11()
+        {
+           
+            console.log(secdiv12)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="blue"
+            firstbutton.style.borderColor="blue"
+            firstbox.style.background="white"
+
+        }
+        secdiv12.addEventListener("mouseout",change11)
+      
+        function change22()
+        {
+           
+            console.log(secdiv22)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="blue"
+            secbutton.style.borderColor="blue"
+            secbox.style.background="white"
+        }
+        secdiv22.addEventListener("mouseout",change22)
+
         </script>
         
         
