@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" ,intial-scale=1.0>
-    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
 </head>
 <style type="text/css">
     #container{
@@ -15,18 +15,20 @@
         color: white;
     }
     .ApiBlock{
-        border:1px solid red;
-        display: grid;
+        /*border:1px solid green;*/
+        /* display: grid; */
         justify-content: center;
+        /* grid-gap: 10px; */
     }
     .ApiReference {
-        display: flex;
+        display: grid;
         padding: 12px;
         margin: 20px;
         text-align: center;
     }
     .ApiReference > div {
         border:1px solid red;
+
     } 
     .ApiReferenceOne{
         grid-area: "a";
@@ -34,17 +36,38 @@
     .ApiReferencetwo{
         grid-area: "b";
     }
-
-    @media only screen and (max-width:600px) {}
+/*
+    @media only screen and (max-width:600px) { 
+        .ApiReference{
+            grid-template-areas: "a"
+                                 "b";
+        }}
 
     @media only screen and (min-width:600px) {}
 
-    @media only screen and (mix-width:768px) {}
+    @media only screen and (min-width:768px) {}
 
-    @media only screen and (mix-width:992px) {
+    @media only screen and (min-width:992px) {
+       
     }
 
-    @media only screen and (mix-width:1200px) {}
+    @media only screen and (mix-width:1200px) {}*/
+
+    #features{
+        /*border: 1px solid black;*/
+        text-align: center;
+        display: grid;
+           grid-template-rows:  1fr 1fr;
+        grid-template-columns:  1fr 1fr;
+        width:1030px;
+    }
+    .featureheader{
+        border:1px solid green;
+        box-shadow: 12px 12px 12px;
+        /*width: 120px;*/
+     
+    }
+
 </style>
 
 <body>
@@ -64,7 +87,105 @@
                 </div>
             </div>
         </div>
-
+      
+        <h3>Feature Resources </h3>
+        <div id="features">
+        
+            
+        <div id="features">
+            <div class="featureheader">
+                <div>
+                    <img src="#" alt="ti" title="img1">
+                </div>
+                <div>
+                    <p>sending</p>
+                </div>
+                 <div>
+                    <p>Curl Examples </p>
+                </div>
+                <div>
+                    <p>sandbox</p>
+                </div>
+                <div>
+                    <p>How send </p>
+                </div>
+                <div>
+                    <p>How to send a SMTP EMAIL</p>
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
+            </div>
+            <div class="featureheader">
+                <div>
+                    <img src="#" alt="ti" title="img1">
+                </div>
+                <div>
+                    <p>sending</p>
+                </div>
+                 <div>
+                    <p>Curl Examples </p>
+                </div>
+                <div>
+                    <p>sandbox</p>
+                </div>
+                <div>
+                    <p>How send </p>
+                </div>
+                <div>
+                    <p>How to send a SMTP EMAIL</p>
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
+            </div>
+            <div class="featureheader">
+                <div>
+                    <img src="#" alt="ti" title="img1">
+                </div>
+                <div>
+                    <p>sending</p>
+                </div>
+                 <div>
+                    <p>Curl Examples </p>
+                </div>
+                <div>
+                    <p>sandbox</p>
+                </div>
+                <div>
+                    <p>How send </p>
+                </div>
+                <div>
+                    <p>How to send a SMTP EMAIL</p>
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
+            </div>
+             <div class="featureheader">
+                <div>
+                    <img src="#" alt="ti" title="img1">
+                </div>
+                <div>
+                    <p>sending</p>
+                </div>
+                 <div>
+                    <p>Curl Examples </p>
+                </div>
+                <div>
+                    <p>sandbox</p>
+                </div>
+                <div>
+                    <p>How send </p>
+                </div>
+                <div>
+                    <p>How to send a SMTP EMAIL</p>
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
