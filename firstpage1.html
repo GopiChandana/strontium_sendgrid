@@ -7,6 +7,9 @@
         *{
             font-family:calibri,monospace
         }
+        body{
+            position:relative;
+        }
         #firstpage{
             display: grid;
             grid-gap:30px;
@@ -21,6 +24,8 @@
             height:105px;
             width:1490px;
             position: fixed;
+            float: left;
+            top:0;
             grid-area:firstnav;
             background: rgba(255,255,255,0.9);
             opacity: 1;
@@ -160,12 +165,14 @@
           margin-right: 45px;
       }
       #goodbye{
-          margin-left:100px;
+          margin-right:10px;
+          margin-left:100px; 
           margin-top:20px;
           height:300px;
-          width:40%;
+          width:524px;
           text-align:left;
-          /* border:1px solid black; */
+          /* border:1px solid black;  */
+          float:left
       }
       #goodbye > h1{
           margin-top : 40px;
@@ -181,21 +188,52 @@
           font-size:20px;
           margin-left:50px;
       }
-      #goodbye-img{
-           height:406px;
-          width:295px;
+       #goodbye-img{
+           height:306px;
+          width:195px;
           object-fit: contain;
-          /* margin-left:100px; */
-      }
-      #goodbye-img > img {
-          margin-left:180px;
-      }
+          float: left;
+          /* border:1px solid black; */
+          margin-left:180px;  
+      } 
+     
       #goodbyetext{
           margin-left:50px;
           margin-top:20px;
           height:300px;
-          width:40%;
+          width:44%;
           text-align:left;
+          /* border:2px solid blue; */
+           float:left 
+      }
+      #goodbyetext > img{
+          margin-top:20px;
+          float: left;
+      }
+      #goodbyetext > img ~ img{
+          clear:left;
+          float: left;
+      }
+      #goodbyetext > div {
+          margin-top:30px;
+          margin-left:10px;
+          float:left;
+      }
+      #goodbyetext > div > div{
+          color:rgb(56, 56, 85);
+          font-size:25px;
+          font-weight: bolder;
+      }
+      #goodbyetext > div > p{
+          color:rgb(56, 56, 85);
+          line-height: 40px;
+          font-size:20px;
+          
+      }
+      #goodbyetext > div ~ div{
+          margin-top:30px;
+          margin-left:10px;
+          float:left;
       }
         </style>
     </head>
@@ -242,6 +280,7 @@
         <img class="margin-right"  src="glass.png"/>
         <img class="margin-right"  src="instacart.png"/>
        </div>
+
        <div id="goodbye">
        <h1>Say goodbye to fire <br/>drills</h1>
        <div>Build and monitor your email solution on a</div>
@@ -250,13 +289,27 @@
        <p><strong>CHECK STATUS---></strong></p>
        </div>
 
-       <div id="goodbye-img">
-        <img src="table.png"/>
-      </div>
       <div id="goodbyetext">
-
+      <img src="circle.png"/>
+      <div>
+          <div>Proven deliverability</div>
+          <p>You can rely on our globally distributed,<br/> cloud-based architecture.</p>
       </div>
-    
+      <img src="tri.png"/>
+      <div>
+        <div>Purpose-built MTA</div>
+        <p>Use the MTA to deliver 60 billion emails/mo <br/>for brands like Uber.</p>
+      </div>
+      <img src="half-circle.png"/>
+      <div>
+        <div>Time-saving features</div>
+        <p>Fast troubleshooting, secure account management, and intuitive <br/>UI for data analysis.</p>
+      </div>
+      </div>
+
+      <div id="goodbye-img">
+        <img  src="table.png"/>
+       </div>
     
     </div>
     </div> 
