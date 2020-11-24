@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>firstpage</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        *{
+            font-family:calibri,monospace
+        }
+        #firstpage{
+            display: grid;
+            grid-gap:30px;
+        }
+        nav{
+            background: rgba(255,255,255,0.9);
+            /* float:left */
+        }
+        #firstnav{
+            border:1px solid wheat;
+            margin-top:10px;
+            height:105px;
+            width:1490px;
+            position: fixed;
+            grid-area:firstnav;
+            background: rgba(255,255,255,0.9);
+            opacity: 1;
+            
+        }
+         #secnav{
+             border:1px solid rgb(12, 12, 12); 
+            margin:auto;
+            /* margin-top:120px; */
+            height:56px;
+            width:70%;
+            position:absolute;
+            left:15% ;
+            grid-area:secnav; 
+        } 
+        #start{
+            /* border:2px solid black; */
+            margin-top:120px;
+            height:1000px;
+            width:1490px;
+            position:relative;
+        }
+        .border{
+          height:100px;
+          width:fit-content;
+          padding-left:10px;
+          padding-right:10px;
+          /* border:1px solid black; */
+          background-color: white;
+          margin-left:30px;
+          line-height: 90px;
+          color:blue;
+          font-weight: bolder;
+          font-size:20px;
+        }
+        #cntctus,#signin{
+            color:rgb(81, 83, 92)
+        }
+        .float{
+            float:left
+        }
+        #nav-2{
+            height:104px;
+            width:50%;
+            /* border:2px solid red; */
+            float:left
+        }
+        #nav-1{
+            height:50px;
+            width:20%;
+            text-align: center;
+            font-size:large;
+            margin-top:25px;
+            margin-bottom:25px;
+            float:left;
+            object-fit: contain;
+            position:sticky;
+            top:50px;
+             /* border:1px solid black */
+        }
+        .border-bttm{
+            border-bottom: 4px ridge; 
+            border-bottom-color: blue;
+        }
+        .blckfont{
+            color:black;
+            
+        }
+        #navbutton{
+            color:white;
+            background-color: blue;
+            border:2px soild blue;
+            height:40px;
+            text-align: center;
+            line-height: 30px;
+            position:absolute;
+            top:25px;
+            right:20px;
+        }
+        #secnavimg{
+            height:32px;
+            width:32px;
+            object-fit: contain;
+            margin-top:13px;
+            margin-left:100px;
+            /* border:1px solid black; */
+        }
+        .email{
+            margin-left:20px;
+            line-height: 60px;
+            font-weight:bolder;
+            font-size:18px;
+            color:rgb(62, 62, 92)
+        }
+        .float1{
+            float:right;
+            margin-right: 20px;
+        }
+        #overview{
+            /* border:1px solid black; */
+            height:52px;
+            border-bottom:4px ridge;
+            border-bottom-color: blue;
+        }
+        h1{
+            margin-top:60px;
+            font-weight: 2000px;
+            font-size:40px;
+        }
+        #afternav{
+            text-align: center;
+        }
+        #afternav > p{
+            font-size:20px;
+        }
+        #afternav >button{
+            color:white;
+            background-color: blue;
+            height:50px;
+            width:150px;
+            font-size:20px;
+            font-weight:bold;
+        }
+        #afternav > #question{
+            font-size:15px;
+        }
+        #afternav > p >strong{
+            color:blue
+        }
+        #images{
+          width:90%;
+          margin:auto;
+          height:50px;
+          /* border:1px solid black;     */
+      }
+      .margin-right{
+          margin-right: 45px;
+      }
+      #goodbye{
+          margin-left:100px;
+          margin-top:20px;
+          height:300px;
+          width:40%;
+          text-align:left;
+          /* border:1px solid black; */
+      }
+      #goodbye > h1{
+          margin-top : 40px;
+          margin-left:50px;
+      }
+      #goodbye > div {
+          font-size:20px;
+          margin-left:50px;
+      }
+      #goodbye > p >strong {
+          color:blue;
+          font-weight:bold;
+          font-size:20px;
+          margin-left:50px;
+      }
+      #goodbye-img{
+           height:406px;
+          width:295px;
+          object-fit: contain;
+          /* margin-left:100px; */
+      }
+      #goodbye-img > img {
+          margin-left:180px;
+      }
+      #goodbyetext{
+          margin-left:50px;
+          margin-top:20px;
+          height:300px;
+          width:40%;
+          text-align:left;
+      }
+        </style>
+    </head>
+    <body >
+        <div id="firstpage">
+       <nav id="firstnav">
+           <img id="nav-1" src="https://uiux.s3.amazonaws.com/logo/sg-twilio-lockup.svg"/>
+           <div id="nav-2" >
+               <div class="border float border-bttm">Products</div>
+               <div class="border float border-bttm">Why SendGrid</div>
+               <div id="resrc" class="border float blckfont">Resources</div>
+               <div id="devlop" class="border float blckfont">Developers</div>
+               <div id="price" class="border float blckfont">Pricing</div>
+           </div>
+           <div>
+           <div id="cntctus" class="border float blckfont">Contact Us</div>
+           <div id="signin"  class="border float blckfont">Sign in</div>
+           </div>
+           <button id="navbutton" class="border float">Start for free</button>
+        </nav> 
+      
+        <div id="start">
+       <div id="secnav">
+       <img id="secnavimg" class="float" src="https://d15tnd3q55f8nl.cloudfront.net/static/56f99a12bdc7c058f07efafc8765b9d0/f451f/expert-services-icon.png"/>
+       <div class="float email">EMAIL API</div>   
+       <div class="float1 email">Features</div>
+       <div class="float1 email">Use cases</div>
+       <div id="overview"class="float1 email">Overview</div>
+       </div>
+       <div id="afternav">
+       <h1>Build for the new normal</h1>
+       <p>Adapt your communication strategy and strengthen customer trust with reliable email delivery at scale.</p>
+       <button>Try for free</button>
+       <p id="question">Looking for a custom plan?<strong>CONTACT SALES</strong> ---></p>
+       <div id="page1img1">
+       <img src="https://d15tnd3q55f8nl.cloudfront.net/static/4e652306ab3b6aae995c09a493bfed3e/c4c10/api1-01.png"/>
+       </div>
+       <h2>TRUSTED BY TOP COMPANIES FOR WORRY-FREE SENDING:</h2>
+       <div id="images">
+        <img class="margin-right"  src="uber.png"/>
+        <img class="margin-right"  src="spotify.png">
+        <img class="margin-right"  src="air.png"/>
+        <img class="margin-right"  src="yelp.png"/>
+        <img class="margin-right"  src="glass.png"/>
+        <img class="margin-right"  src="instacart.png"/>
+       </div>
+       <div id="goodbye">
+       <h1>Say goodbye to fire <br/>drills</h1>
+       <div>Build and monitor your email solution on a</div>
+       <div>trusted foundation—with technical and </div>
+       <div>strategic support when you need it most</div>
+       <p><strong>CHECK STATUS---></strong></p>
+       </div>
+
+       <div id="goodbye-img">
+        <img src="table.png"/>
+      </div>
+      <div id="goodbyetext">
+
+      </div>
+    
+    
+    </div>
+    </div> 
+ 
+        <script type="text/javascript">
+        var resrc=document.querySelector("#resrc")
+         console.log(resrc.textContent)
+        var devlop=document.querySelector("#devlop")
+        var price=document.querySelector("#price")
+        var cntctus=document.querySelector("#cntctus")
+        var signin=document.querySelector("#signin")
+        var navbutton=document.querySelector("#navbutton")
+        function changeborderclr()
+        {
+            console.log(event.target)
+           event.target.style.borderBottom = "4px ridge" ; 
+           event.target.style.borderBottomColor = "blue" ;
+           event.target.style.color = "blue" ;
+        }
+        resrc.addEventListener("mouseover",changeborderclr)
+        devlop.addEventListener("mouseover",changeborderclr)
+        price.addEventListener("mouseover",changeborderclr)
+        cntctus.addEventListener("mouseover",changeborderclr)
+        signin.addEventListener("mouseover",changeborderclr)
+        function navbttn()
+        {
+            event.target.style.backgroundColor="rgb(3, 3, 53)"
+        }
+        navbutton.addEventListener("mouseover",navbttn)
+        function navbttnOriginal()
+        {
+            event.target.style.backgroundColor="blue"
+        }
+        navbutton.addEventListener("mouseout",navbttnOriginal)
+        function changeborderclroriginal()
+        {
+           event.target.style.borderBottom = "none" ; 
+           event.target.style.borderBottomColor = "black" ;
+           event.target.style.color = "black" ;
+        }
+        resrc.addEventListener("mouseout",changeborderclroriginal)
+        devlop.addEventListener("mouseout",changeborderclroriginal)
+        price.addEventListener("mouseout",changeborderclroriginal)
+        cntctus.addEventListener("mouseout",changeborderclroriginal)
+        signin.addEventListener("mouseout",changeborderclroriginal)
+        
+        </script>
+        
+        
+    </body>
+</html>
