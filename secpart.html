@@ -12,24 +12,22 @@
              grid-gap:30px;
              margin:auto;
              width:70%;
-             /* border:1px solid black; */
              height:500px;
          }
          #firstbox{
               grid-area:first;
               height:490px;
-               /* border:2px solid red;  */
               max-height:fit-content;
+              border:2px solid aliceblue;
+              /* box-shadow: 10px 40px aliceblue; */
          }
-
          #secbox{
             grid-area:sec;
             height:490px;
-             /* border:2px solid green;  */
             max-height:fit-content;
-
-         }
-        
+            border:2px solid aliceblue;
+            /* box-shadow: 10px 40px rgb(182, 216, 245); */
+         }      
          .firstimg{
              width:100%; 
              object-fit: contain; 
@@ -39,8 +37,7 @@
              max-width:fit-content;
              margin:auto;
              object-fit: contain;      
-         }
-        
+         } 
          .seconddiv > p,.seconddiv > h2{
             text-align: center;
          }
@@ -126,6 +123,9 @@
          </div>
       
      </div>
+     
+
+     </div>
         
         <script type="text/javascript">
         var firstbutton = document.querySelector("button");
@@ -134,6 +134,7 @@
         var secdiv22=document.querySelector("#secdiv22");
         var firstbox=document.querySelector("#firstbox");
         var secbox=document.querySelector("#secbox");
+
 
         function change1()
         {
