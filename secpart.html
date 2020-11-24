@@ -76,48 +76,87 @@
           grid-area:third;
           /* margin-top:20px; */
         }
+        .uber{
+            height:50px;
+            width:200px;
+            margin:0px;
+            object-fit: contain;
+            border:1px solid black;
+        }
+      #images{
+          width:90%;
+          margin:auto;
+          height:50px;
+          /* border:1px solid black;     */
+      }
+      .margin-right{
+       margin-right:48px
+      }
+      #img1{
+          grid-area:img1
+      }
+      #img2{
+          grid-area:img2
+      }
+      #img3{
+          grid-area:img3
+      }
+      #img4{
+          grid-area:img4
+      }
+      #img5{
+          grid-area:img5
+      }
+      #img6{
+          grid-area:img6
+      }
    
         
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #second{
-       grid-template-areas:"first"
-                           "sec"
-                           "third"
+       grid-template-areas:"first first first first first first"
+                             "sec sec sec sec sec sec"
+                             "third third third third third third"
+                             "img2 img2 img3 img3 img4 img4 "
 }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #second{
-        grid-template-areas: "first"
-                             "sec"
-                             "third"
+        grid-template-areas: "first first first first first first"
+                             "sec sec sec sec sec sec"
+                             "third third third third third third"
+                             "img2 img2 img3 img3 img4 img4 "
 } 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #second{
-        grid-template-areas: "first sec"
-                              "third third"
+        grid-template-areas: "first first first sec sec sec"
+                              "third third third third third third"
+                              "img2 img2 img3 img3 img4 img4"
 } 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #second{
-        grid-template-areas: "first sec"
-                             "third third"
+        grid-template-areas: "first first first sec sec sec"
+                             "third third third third third third"
+                             "img1 img2 img3 img4 img5 img6"
     }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #second{
-        grid-template-areas: "first sec"
-                              "third third"
+        grid-template-areas: "first first first sec sec sec"
+                             "third third third third third third"
+                             /* "img1 img2 img3 img4 img5 img6" */
     }
    
 }
@@ -143,14 +182,20 @@
                 <button id="last"class="firstbutton">Learn More</button>
             </div>
           </div>
-         <!-- </div> -->
+   
      
          <div id="thirdbox">
              <p id="third-box-p">Over <strong id="underline">80,000 paying customers</strong> trust SendGrid to send more than <strong id="billion">70 billion emails</strong> every month.</p>
-         </div>
-
-     </div>
-        
+        <div id="images">
+         <img class="margin-right" id="img1" src="uber.png"/>
+         <img class="margin-right" id="img2" src="spotify.png">
+         <img class="margin-right" id="img3" src="air.png"/>
+         <img class="margin-right" id="img4" src="yelp.png"/>
+         <img class="margin-right" id="img5" src="glass.png"/>
+         <img class="margin-right" id="img6" src="instacart.png"/>
+        </div>
+        </div>
+        </div>
         <script type="text/javascript">
         var firstbutton = document.querySelector("button");
         var secbutton=document.querySelector("#last");
