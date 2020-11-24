@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exam</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        *{
+            font-family: calibri,monospace;
+        }
+         #second{
+             display:grid;
+             grid-gap:30px;
+             margin:auto;
+             width:70%;
+             height:500px;
+         }
+         #firstbox{
+              grid-area:first;
+              height:490px;
+              max-height:fit-content;
+              border:2px solid aliceblue;
+              /* box-shadow: 10px 40px aliceblue; */
+         }
+         #secbox{
+            grid-area:sec;
+            height:490px;
+            max-height:fit-content;
+            border:2px solid aliceblue;
+            /* box-shadow: 10px 40px rgb(182, 216, 245); */
+         }      
+         .firstimg{
+             width:100%; 
+             object-fit: contain; 
+         }
+         .seconddiv{
+             height:40%;
+             max-width:fit-content;
+             margin:auto;
+             object-fit: contain;      
+         } 
+         .seconddiv > p,.seconddiv > h2{
+            text-align: center;
+         }
+         .seconddiv > h2{
+             font-weight: bolder;
+             font-size: 30px;
+         }
+         .seconddiv > p{
+             font-size: 20px;
+         }
+         .firstbutton{
+             height:40px;
+             width:159.96px;
+             border:2px solid blue;
+             color:blue;
+             margin-left:25%; 
+             border-radius: 5px;  
+             font-weight: bolder; 
+             font-size: 20px; 
+         }
+         #third-box-p{
+             text-align: center;
+             font-size: 25px;
+             font-weight: 650;
+             color:rgb(70, 70, 131)
+         }
+        #third-box-p> #underline{
+             font-weight:bolder;
+             color:blue;
+             text-decoration: underline;
+        }
+        #third-box-p >#billion{
+            color:rgb(3, 3, 53);
+        }
+        #thirdbox{
+          grid-area:third;
+          /* margin-top:20px; */
+        }
+   
+        
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #second{
+       grid-template-areas:"first"
+                           "sec"
+                           "third"
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #second{
+        grid-template-areas: "first"
+                             "sec"
+                             "third"
+} 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #second{
+        grid-template-areas: "first sec"
+                              "third third"
+} 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #second{
+        grid-template-areas: "first sec"
+                             "third third"
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #second{
+        grid-template-areas: "first sec"
+                              "third third"
+    }
+   
+}
+</style>
+    </head>
+    <body>
+        <div id="second">
+
+         <div id="firstbox">
+            <img class="firstimg"  src="https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg"/>
+            <div class="seconddiv" id="secdiv12">
+              <h2><strong>SendGrid API</strong></h2>
+              <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
+             <button class="firstbutton">Learn More</button>
+           </div>
+         </div>
+
+         <div id="secbox">
+            <img class="firstimg" src="https://d15tnd3q55f8nl.cloudfront.net/static/5b9d1c6b7f2285dfd9b0c7e1cb2d3730/a3ad1/image-solutions-mc-box-v3.jpg"/>   
+            <div class="seconddiv" id="secdiv22">
+                <h2><strong>SendGrid Marketing Campaigns</strong></h2>
+                <p>Build meaningful connections with smart<br/><strong>email Marketing.</strong></p>
+                <button id="last"class="firstbutton">Learn More</button>
+            </div>
+          </div>
+         <!-- </div> -->
+     
+         <div id="thirdbox">
+             <p id="third-box-p">Over <strong id="underline">80,000 paying customers</strong> trust SendGrid to send more than <strong id="billion">70 billion emails</strong> every month.</p>
+         </div>
+
+     </div>
+        
+        <script type="text/javascript">
+        var firstbutton = document.querySelector("button");
+        var secbutton=document.querySelector("#last");
+        var secdiv12=document.querySelector("#secdiv12");
+        var secdiv22=document.querySelector("#secdiv22");
+        var firstbox=document.querySelector("#firstbox");
+        var secbox=document.querySelector("#secbox");
+        var underline=document.querySelector("#underline")
+
+        function change1()
+        {
+           
+            console.log(firstbutton)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="navy"
+            firstbutton.style.borderColor="navy"
+            firstbox.style.background="rgba(224, 233, 247, 0.795)"
+        }
+        function change2()
+        {
+           
+            console.log(secbutton)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="navy"
+            secbutton.style.borderColor="navy"
+            secbox.style.background="rgba(224, 233, 247, 0.795)"
+
+        }
+
+        firstbutton.addEventListener("mouseover",change1)
+        secbutton.addEventListener("mouseover",change2)
+       
+        function change11()
+        {
+           
+            console.log(secdiv12)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="blue"
+            firstbutton.style.borderColor="blue"
+            firstbox.style.background="white"
+
+        }
+        secdiv12.addEventListener("mouseout",change11)
+      
+        function change22()
+        {
+           
+            console.log(secdiv22)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="blue"
+            secbutton.style.borderColor="blue"
+            secbox.style.background="white"
+        }
+        secdiv22.addEventListener("mouseout",change22)
+        
+        function under1()
+        {
+            underline.style.color="rgb(3, 3, 53)"
+        }
+        underline.addEventListener("mouseover",under1)
+        function under2()
+        {
+            underline.style.color="blue"
+        }
+        underline.addEventListener("mouseout",under2)
+        </script>
+        
+        
+    </body>
+</html>
