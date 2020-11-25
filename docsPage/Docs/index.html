@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" ,intial-scale=1.0>
     <!-- <link rel="stylesheet" href="/style.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 </head>
 <style type="text/css">
     #container {
@@ -21,9 +22,8 @@
         /* display: grid; */
         justify-content: center;
         border: 2px solid red;
-        width: 380px;
-        margin: 20px 410px;
-
+        width: 580px;
+        margin: 20px 310px;
         /* grid-gap: 10px; */
     }
 
@@ -33,6 +33,10 @@
         margin: 20px;
         text-align: center;
         border: 2px solid white;
+        font-weight: bold;
+        font-size: 23px;
+        color:blue;
+
     }
 
     .ApiReference>div {
@@ -40,8 +44,35 @@
         border: 2px solid white;
         padding: 12px;
         width: 230px;
+        background-color: white 
     }
-
+    .ApiReferenceBtn > p + input {
+        color: white;
+        background-color: dodgerblue;
+        opacity: 0.1em;
+        width: 110px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .ApiReferenceBtn > p + input + input{
+        color: white;
+        background-color: dodgerblue;
+        width: 102px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+    .ApiReferenceBtn > div {
+        width: 242px;
+        height: 12px;
+        background-color:limegreen;
+    }
+    .ApiReferenceBtn + div {
+        width: 242px;
+        height: 125px;
+        background-color:dodgerblue;
+    }
     .ApiReferenceOne {
         grid-area: "a";
     }
@@ -79,34 +110,52 @@
     }
 
     .featureheader {
-        /*border: 1px solid green;*/
+        border: 1px solid green;
         box-shadow: 12px 12px;
-                /*box-shadow: 12px 12px 12px 6px;*/
-
+        background-color: white;
+        box-shadow: 12px 12px 12px 6px;
+        padding: 2px
         /*width: 120px;*/
     }
 
     #openSourceLibraries {
         /*box-shadow: 12px 12px 9px 6px;*/
         padding: 10px;
+        border: 1px solid red;
+        width: 1000px;
+        margin: 12px 30px ;
+        background-color:white; 
+        height: 432px;
+    }
+    a{
+        border:1px solid black;
+        padding: 2px;
+        border-radius: 5px;
+        margin:23px;
+        background-color: limegreen;
     }
 
     p+.openSourceImg {
-        margin: 40px 210px;
+        margin: 40px 240px;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        background-color: white;
+
     }
 
     .OpenSourceimg {
-        width: 150px;
+        width: 50px;
+        margin:20px 23px;
     }
+   .}
     .openSourceImg2{
         height:  220px;
         object-fit: cover;
         margin:20px 120px;
 
     }
+
 
     .TermsAndCondition {
         /*margin: 2px;*/
@@ -132,12 +181,12 @@
     }
 
     p+h2 {
-        color: green;
+        color: #294661;
         text-align: center;
         font-size: 23px;
     }
     h2~p{
-        color: pink;
+        color: #94a8e9;
         text-align: center;
     }
     p+p{
@@ -148,6 +197,7 @@
         text-align: center;
     }
 
+
     .glossaryLibsorted1 {
         margin-left: 220px;
         border: 1px solid springgreen;
@@ -155,6 +205,11 @@
         font-size: 17px;
         width: 340px;
         background-color: white;
+    }
+    .glossaryLibsorted1 >  input{
+        color: red;
+        text-align: center;
+        margin-left: 129px;
     }
     .glossaryLibsorted1 > img {
         border:1px solid red;width: 120px;height: 220px;;
@@ -180,15 +235,17 @@
         <div class="greenColorblock"></div>
         <div class="ApiBlock">
             <div class="ApiReference">
-                <div class="ApiReferenceOne">
+                <div class="ApiReferenceOne ApiReferenceBtn">
                     <div></div>
                     <p>Api Reference</p>
-                    <input type="submit" />
+                    <input type="submit" placeholder="Api" value="visit Api Reference" />
                 </div>
-                <div class="ApiReferencetwo">
+                <div></div>
+                <div class="ApiReferencetwo ApiReferenceBtn">
                     <div></div>
-                    <p>Api Reference</p>
-                    <input type="submit" />
+                    <p>GetStarted</p>
+                    <input type="submit" value="Api" />
+                    <input type="submit" value="SMTP"/>
                 </div>
             </div>
         </div>
@@ -199,12 +256,12 @@
             <h2>open Liberaries </h2>
             <p>prebuild libraries and sample code for popular languages</p>
             <div class="openSourceImg">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
             </div>
         </div>
         <!--  -->
@@ -251,7 +308,7 @@
         </div>
          <hr>
         <div>
-            <img class="OpenSourceimg" style="width: 320px;margin-left: 440px" src="/home/milind/Desktop/joy.png">
+            <img class="" style="width: 320px;margin-left: 440px" src="/home/milind/Desktop/joy.png">
         </div>
 
 <!-- glossary -->
@@ -269,16 +326,16 @@
                     <p>Sender Authentication</p>
                     <p>Event Webhook</p>
                     <p>Email Delivery</p>
-                    <button>submit</button>
+                    <input type="submit" name="" value="viewAll">
                 </div>
                 <div class="glossaryLibsorted2">
-                    <img class="OpenSourceimg openSourceImg2" src="/home/milind/Desktop/help-center-magnify.svg" alt="ti" title="img1">
+                    <img class="openSourceImg2" src="/home/milind/Desktop/help-center-magnify.svg" alt="ti" title="img1">
                 </div>
             </div>
         </div>
 <!-- opensource Img -->
         <div>
-            <img class="OpenSourceimg" src="/home/milind/Desktop/imageSendGrid.png" alt="ti" title="img1" style="margin-left: 532px; width: 52px;padding: 12px;">
+            <img class="joyIcon" src="/home/milind/Desktop/imageSendGrid.png" alt="ti" title="img1" style="margin-left: 532px; width: 52px;padding: 12px;">
             <div class="TermsAndCondition">
                 <p>About </p>
                 <p>|</p>
