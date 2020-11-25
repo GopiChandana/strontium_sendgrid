@@ -39,8 +39,6 @@ function handleForm(){
 					 p2.style.textDecoration = "none";
 					 var p3 = document.createElement("img");
 					 p3.src="/home/milind/Desktop/question.png";
-					 // p3.style.position ="relative";
-					 // p3.top= "300px" 
 
 					 apiV5.append(p1,p3,p2);
 
@@ -82,10 +80,6 @@ function handleForm(){
 
 					 apiV7.append(p6,p15,p7);
 
-
-
- 	 // ===================================================
-
  	 // second operator
 				var apiV8 = document.createElement('div');
 					 apiV8.style.display= 'flex';
@@ -102,8 +96,6 @@ function handleForm(){
 					 p9.style.textDecoration = "none"
 
 					 apiV8.append(p8,p9);
-
-
 
 				var apiV9 = document.createElement('div');
 					 apiV9.style.display= 'flex';
@@ -136,21 +128,12 @@ function handleForm(){
 					 p13.style.textDecoration = "none"
 					 apiV10.append(p12,p13);
 
-
 					mailSend.append(apiV5,apiV6,apiV7)
 					mailSend1.append(apiV8,apiV9,apiV10) 
-					
 
-			// plusheader.append(mailSend1)
-
-	     // mailSend.append(apiV5,apiV6,apiV7)
-	     // mailSend.append(apiV8,apiV9,apiV10)
-		// mailSend.append(apiV5,apiV6,apiV7,apiV8,apiV9,apiV10)
-		
-	 // plusheader.append(mailSend)
-	insider.append(plusheader,mailSend);
-	insider2.append(plusheader1,mailSend1);
-}
+					insider.append(plusheader,mailSend);
+					insider2.append(plusheader1,mailSend1);
+			}
 
 
 window.addEventListener('load',function(){
