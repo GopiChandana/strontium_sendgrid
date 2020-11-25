@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>firstpage</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        *{
+            font-family:calibri,monospace
+        }
+        /* body{
+            position:relative;
+        } */
+        /* #firstpage{
+            display: grid;
+            grid-gap:30px;
+        } */
+        nav{
+            background: rgba(255,255,255);
+            /* float:left */
+        }
+        #firstnav{
+            border:1px solid aliceblue;
+            height:105px;
+            width:1490px;
+            position: fixed;
+            float: left; 
+            top:0;
+            /* grid-area:firstnav; */
+            background-color: rgb(255,255,255);
+           
+            
+        }
+         #secnav{
+             border:1px solid rgb(12, 12, 12); 
+            margin:auto;
+            /* margin-top:120px; */
+            height:56px;
+            width:70%;
+            /* position:absolute; */
+            left:15% ;
+            grid-area:secnav; 
+        } 
+      
+        
+        .border{
+          height:100px;
+          width:fit-content;
+          padding-left:10px;
+          padding-right:10px;
+          /* border:1px solid black; */
+          background-color: white;
+          margin-left:30px;
+          line-height: 90px;
+          color:blue;
+          font-weight: bolder;
+          font-size:20px;
+        }
+        #cntctus,#signin{
+            color:rgb(81, 83, 92)
+        }
+        .float{
+            float:left
+        }
+        #nav-2{
+            height:104px;
+            width:50%;
+            /* border:2px solid red; */
+            float:left
+        }
+        #nav-1{
+            height:50px;
+            width:20%;
+            text-align: center;
+            font-size:large;
+            margin-top:25px;
+            margin-bottom:25px;
+            float:left;
+            object-fit: contain;
+            position:sticky;
+            top:50px;
+             /* border:1px solid black */
+        }
+        .border-bttm{
+            border-bottom: 4px ridge; 
+            border-bottom-color: blue;
+        }
+        .blckfont{
+            color:black;
+            
+        }
+        #navbutton{
+            color:white;
+            background-color: blue;
+            border:2px soild blue;
+            height:40px;
+            text-align: center;
+            line-height: 30px;
+            position:absolute;
+            top:25px;
+            right:20px;
+        }
+      
+         #second{
+             display:flex;
+             border:1px solid aliceblue;
+             margin-top:200px;
+             width:100%;
+             height:550px;
+             position: relative;
+         }
+         #firstbox{
+              display:flex;
+              /* margin-top:200px; */
+              margin-left:130px;
+            
+              margin-right:10px;
+              width:40%;
+              height:fit-content;
+              flex-direction:column; 
+              border:2px solid aliceblue;
+           
+         }
+         #secbox{
+            display:flex;
+              /* margin-top:200px; */
+              margin-left:10px;
+              /* margin-bottom:10px; */
+              margin-right:10px;
+              width:40%;
+              height:fit-content;
+              flex-direction:column; 
+              border:2px solid aliceblue;
+           
+         }  
+          #thirdbox{
+             text-align:center;
+            
+          }     
+         .firstimg{
+             width:100%; 
+             object-fit: contain;
+             height:70%;
+             margin:0px;
+             border:1px solid aliceblue;
+
+         }
+         .seconddiv{
+             height:40%;
+             width:100%; 
+             margin:0px;
+             margin-bottom:20px;
+             object-fit: contain;      
+         } 
+         .seconddiv > p,.seconddiv > h2{
+            text-align: center;
+         }
+         .seconddiv > h2{
+             font-weight: bolder;
+             font-size: 30px;
+         }
+         .seconddiv > p{
+             font-size: 20px;
+         }
+         .firstbutton{
+             height:40px;
+             width:159.96px;
+             border:2px solid blue;
+             color:blue;
+             margin-left:25%; 
+             border-radius: 5px;  
+             font-weight: bolder; 
+             font-size: 20px; 
+         }
+         #third-box-p{
+             text-align: center;
+             font-size: 25px;
+             font-weight: 650;
+             color:rgb(70, 70, 131);
+             grid-area:p3;
+         }
+        #third-box-p> #underline{
+             font-weight:bolder;
+             color:blue;
+             text-decoration: underline;
+        }
+        #third-box-p >#billion{
+            color:rgb(3, 3, 53);
+        }
+       
+        .uber{
+            height:50px;
+            width:200px;
+            margin:0px;
+            object-fit: contain;
+            border:1px solid black;
+        }
+      #images{
+          /* display:grid; */
+          width:90%;
+          margin-left:110px;
+          height:50px;
+           /* border:1px solid black;      */
+      }
+      .margin-right{
+       margin-right:60px
+      }
+      #last1,#last{
+          margin-left:37%;
+      }
+     
+        
+      
+        </style>
+    </head>
+    <body >
+        <div id="firstpage">
+       <nav id="firstnav">
+           <img id="nav-1" src="https://uiux.s3.amazonaws.com/logo/sg-twilio-lockup.svg"/>
+           <div id="nav-2" >
+               <div id="products" class="border float blckfont">Products</div>
+               <div id="why" class="border float blckfont">Why SendGrid</div>
+               <div id="resrc" class="border float blckfont">Resources</div>
+               <div id="devlop" class="border float blckfont">Developers</div>
+               <div id="price" class="border float blckfont">Pricing</div>
+           </div>
+           <div>
+           <div id="cntctus" class="border float blckfont">Contact Us</div>
+           <div id="signin"  class="border float blckfont">Sign in</div>
+           </div>
+           <button id="navbutton" class="border float">Start for free</button>
+        </nav> 
+      
+      <!--nextpart  -->
+   
+    <div id="second"> 
+        <div id="firstbox">
+           <img class="firstimg"  src="https://d15tnd3q55f8nl.cloudfront.net/static/599bc27c2d4c0fda2ad2b5a55874fb32/a3ad1/image-solutions-api-box-v3.jpg"/>
+           <div class="seconddiv" id="secdiv12">
+             <h2><strong>SendGrid API</strong></h2>
+             <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
+            <a href="file:///C:/Users/HP/Desktop/practise%20code/firstpage1.html"><button id="last1"class="firstbutton">Learn More</button></a>
+          </div>
+        </div>
+
+        <div id="secbox">
+           <img class="firstimg" src="https://d15tnd3q55f8nl.cloudfront.net/static/5b9d1c6b7f2285dfd9b0c7e1cb2d3730/a3ad1/image-solutions-mc-box-v3.jpg"/>   
+           <div class="seconddiv" id="secdiv22">
+               <h2><strong>SendGrid Marketing Campaigns</strong></h2>
+               <p>Build meaningful connections with smart<br/><strong>email Marketing.</strong></p>
+               <a href="file:///C:/Users/HP/Desktop/practise%20code/firstpage1.html"><button id="last"class="firstbutton">Learn More</button></a>
+           </div>
+         </div>
+
+         </div> 
+  <!-- nextpart -->
+    
+        <div id="thirdbox">
+            <p id="third-box-p">Over <strong id="underline">80,000 paying customers</strong> trust SendGrid to send more than <strong id="billion">70 billion emails</strong> every month.</p>
+        <div id="images">
+        <img class="margin-right" id="img1" src="uber.png"/>
+        <img class="margin-right" id="img2" src="spotify.png">
+        <img class="margin-right" id="img3" src="air.png"/>
+        <img class="margin-right" id="img4" src="yelp.png"/>
+        <img class="margin-right" id="img5" src="glass.png"/>
+        <img class="margin-right" id="img6" src="instacart.png"/>
+       </div> 
+       </div> 
+
+
+
+
+    </div> 
+ 
+        <script type="text/javascript">
+        var products=document.querySelector("#products")
+        var why=document.querySelector("#why")
+        var resrc=document.querySelector("#resrc")
+         console.log(resrc.textContent)
+        var devlop=document.querySelector("#devlop")
+        var price=document.querySelector("#price")
+        var cntctus=document.querySelector("#cntctus")
+        var signin=document.querySelector("#signin")
+        var navbutton=document.querySelector("#navbutton")
+        function changeborderclr()
+        {
+            console.log(event.target)
+           event.target.style.borderBottom = "4px ridge" ; 
+           event.target.style.borderBottomColor = "blue" ;
+           event.target.style.color = "blue" ;
+        }
+        products.addEventListener("mouseover",changeborderclr)
+        why.addEventListener("mouseover",changeborderclr)
+        resrc.addEventListener("mouseover",changeborderclr)
+        devlop.addEventListener("mouseover",changeborderclr)
+        price.addEventListener("mouseover",changeborderclr)
+        cntctus.addEventListener("mouseover",changeborderclr)
+        signin.addEventListener("mouseover",changeborderclr)
+        function navbttn()
+        {
+            event.target.style.backgroundColor="rgb(3, 3, 53)"
+        }
+        navbutton.addEventListener("mouseover",navbttn)
+        function navbttnOriginal()
+        {
+            event.target.style.backgroundColor="blue"
+        }
+        navbutton.addEventListener("mouseout",navbttnOriginal)
+        function changeborderclroriginal()
+        {
+           event.target.style.borderBottom = "none" ; 
+           event.target.style.borderBottomColor = "black" ;
+           event.target.style.color = "black" ;
+        }
+        resrc.addEventListener("mouseout",changeborderclroriginal)
+        devlop.addEventListener("mouseout",changeborderclroriginal)
+        price.addEventListener("mouseout",changeborderclroriginal)
+        cntctus.addEventListener("mouseout",changeborderclroriginal)
+        signin.addEventListener("mouseout",changeborderclroriginal)
+        products.addEventListener("mouseout",changeborderclroriginal)
+        why.addEventListener("mouseout",changeborderclroriginal)
+        var firstbutton = document.querySelector("#last1");
+        var secbutton=document.querySelector("#last");
+        var secdiv12=document.querySelector("#secdiv12");
+        var secdiv22=document.querySelector("#secdiv22");
+        var firstbox=document.querySelector("#firstbox");
+        var secbox=document.querySelector("#secbox");
+        var underline=document.querySelector("#underline")
+
+        function change1()
+        {
+           
+            console.log(firstbutton)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="navy"
+            firstbutton.style.borderColor="navy"
+            firstbox.style.background="rgba(224, 233, 247, 0.795)"
+        }
+        function change2()
+        {
+           
+            console.log(secbutton)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="navy"
+            secbutton.style.borderColor="navy"
+            secbox.style.background="rgba(224, 233, 247, 0.795)"
+
+        }
+
+        firstbutton.addEventListener("mouseover",change1)
+        secbutton.addEventListener("mouseover",change2)
+       
+        function change11()
+        {
+           
+            console.log(secdiv12)
+            firstbutton.style.fontSize="20px"
+            firstbutton.style.color="blue"
+            firstbutton.style.borderColor="blue"
+            firstbox.style.background="white"
+
+        }
+        secdiv12.addEventListener("mouseout",change11)
+      
+        function change22()
+        {
+           
+            console.log(secdiv22)
+            secbutton.style.fontSize="20px"
+            secbutton.style.color="blue"
+            secbutton.style.borderColor="blue"
+            secbox.style.background="white"
+        }
+        secdiv22.addEventListener("mouseout",change22)
+        
+        function under1()
+        {
+            underline.style.color="rgb(3, 3, 53)"
+        }
+        underline.addEventListener("mouseover",under1)
+        function under2()
+        {
+            underline.style.color="blue"
+        }
+        underline.addEventListener("mouseout",under2)
+        
+        
+        </script>
+        
+        
+    </body>
+</html>
