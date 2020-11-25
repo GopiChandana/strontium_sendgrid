@@ -13,6 +13,7 @@
         width: 1200px;
         height: auto;
         color: white;
+        justify-content: center
     }
 
     .ApiBlock {
@@ -23,7 +24,7 @@
     }
 
     .ApiReference {
-        display: grid;
+        display: flex;
         padding: 12px;
         margin: 20px;
         text-align: center;
@@ -67,17 +68,20 @@
         grid-template-columns: 1fr 1fr;
         width: 1030px;
         margin-left: 120px;
-        box-shadow: 12px 12px 12px 12px;
+        box-shadow: 12px 12px 10px 6px;
     }
 
     .featureheader {
-        border: 1px solid green;
-        box-shadow: 12px 12px 12px;
+        /*border: 1px solid green;*/
+        box-shadow: 12px 12px;
+                /*box-shadow: 12px 12px 12px 6px;*/
+
         /*width: 120px;*/
     }
 
     #openSourceLibraries {
-        box-shadow: 12px 12px 12px 12px;
+        /*box-shadow: 12px 12px 9px 6px;*/
+        padding: 10px;
     }
 
     p+.openSourceImg {
@@ -88,7 +92,13 @@
     }
 
     .OpenSourceimg {
-        width: 150px;
+        width: 50px;
+    }
+    .openSourceImg2{
+        height:  220px;
+        object-fit: cover;
+        margin:20px 120px;
+
     }
 
     .TermsAndCondition {
@@ -115,7 +125,12 @@
     }
 
     p+h2 {
-        color: white;
+        color: green;
+        text-align: center;
+        font-size: 23px;
+    }
+    h2~p{
+        color: pink;
         text-align: center;
     }
     p+p{
@@ -125,15 +140,20 @@
     .glossaryLibsorted1 {
         margin-left: 220px;
         border: 1px solid springgreen;
-        box-shadow: 12px 12px 12px 12px;
+        box-shadow: 12px 12px 12px 6px;
         font-size: 17px;
         width: 340px;
+        background-color: white;
     }
     .glossaryLibsorted1 > img {
-        border:1px solid red;width: 120px;height: 220px
+        border:1px solid red;width: 120px;height: 220px;;
     }
     .glossaryLibsorted2{
      width: 120px;
+    }
+    .glossary{
+        border:1px solid red;
+        padding: 19px;
     }
     .glossary ~ div{
         background-color: yellow;
@@ -162,10 +182,11 @@
             </div>
         </div>
 
-        <!-- open Sources Libraries -->
+<!-- open Sources Libraries -->
         <div id="openSourceLibraries">
-            <h2 style="text-align: center;">open Liberaries</h2>
-            <p style="text-align: center;">prebuild libraries and sample code for popular languages</p>
+            <p></p>
+            <h2>open Liberaries </h2>
+            <p>prebuild libraries and sample code for popular languages</p>
             <div class="openSourceImg">
                 <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
                 <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
@@ -175,107 +196,54 @@
                 <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
             </div>
         </div>
-        <!--  -->
-        <h3 style="text-align: center;">Feature Resources </h3>
+<!-- Feature REsources -->
+        <p></p>
+        <h2>Feature Resources </h2>
         <div id="features">
             <div class="featureheader">
-                <div>
                     <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                </div>
-                <div>
-                    <p>sending</p>
-                </div>
-                <div>
+                    <h2>sending</h2>
                     <p>Curl Examples </p>
-                </div>
-                <div>
                     <p>sandbox</p>
-                </div>
-                <div>
                     <p>How send </p>
-                </div>
-                <div>
                     <p>How to send a SMTP EMAIL</p>
-                </div>
-                <div>
                     <input type="submit" />
-                </div>
             </div>
             <div class="featureheader">
-                <div>
+                
                     <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                </div>
-                <div>
-                    <p>sending</p>
-                </div>
-                <div>
+                    <h2>sending</h2>
                     <p>Curl Examples </p>
-                </div>
-                <div>
                     <p>sandbox</p>
-                </div>
-                <div>
                     <p>How send </p>
-                </div>
-                <div>
                     <p>How to send a SMTP EMAIL</p>
-                </div>
-                <div>
                     <input type="submit" />
-                </div>
             </div>
             <div class="featureheader">
-                <div>
                     <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                </div>
-                <div>
-                    <p>sending</p>
-                </div>
-                <div>
+                    <h2>sending</h2>
                     <p>Curl Examples </p>
-                </div>
-                <div>
                     <p>sandbox</p>
-                </div>
-                <div>
                     <p>How send </p>
-                </div>
-                <div>
                     <p>How to send a SMTP EMAIL</p>
-                </div>
-                <div>
                     <input type="submit" />
-                </div>
             </div>
             <div class="featureheader">
-                <div>
                     <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
-                </div>
-                <div>
-                    <p>sending</p>
-                </div>
-                <div>
+                    <h2>sending</h2>
                     <p>Curl Examples </p>
-                </div>
-                <div>
                     <p>sandbox</p>
-                </div>
-                <div>
                     <p>How send </p>
-                </div>
-                <div>
                     <p>How to send a SMTP EMAIL</p>
-                </div>
-                <div>
                     <input type="submit" />
-                </div>
             </div>
         </div>
+         <hr>
         <div>
-            <img class="OpenSourceimg" style="width: 320px;margin-left: 390px" src="/home/milind/php.svg" alt="ti"
-                title="img1">
+            <img class="OpenSourceimg" style="width: 320px;margin-left: 440px" src="/home/milind/Desktop/joy.png">
         </div>
 
+<!-- glossary -->
         <div class="glossary">
             <p></p>
             <h2>Glossary</h2>
@@ -283,21 +251,22 @@
             <p>Not sure what something means ? Find terms from our library sortes A_Z</p>
             <p></p>
           <div class="glossaryLibSorted"> 
-            
                 <div class="glossaryLibsorted1">
-                     <h2>Feature</h2>
+                    <h2>Feature</h2>
                     <p>Sender Authentication</p>
                     <p>Event Webhook</p>
                     <p>Email Delivery</p>
                     <button>submit</button>
                 </div>
-                <div class="glossaryLibsorted1 glossaryLibsorted2">
-                    <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
+                <div class="glossaryLibsorted2">
+                    <img class="OpenSourceimg openSourceImg2" src="/home/milind/Desktop/help-center-magnify.svg" alt="ti" title="img1">
                 </div>
             </div>
         </div>
+
+<!-- opensourceImg -->
         <div>
-            <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1" style="margin-left: 532px;">
+            <img class="OpenSourceimg" src="/home/milind/Desktop/imageSendGrid.png" alt="ti" title="img1" style="margin-left: 532px; width: 52px;padding: 12px;">
             <div class="TermsAndCondition">
                 <p>About </p>
                 <p>|</p>
