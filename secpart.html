@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>exam</title>
+        <title>secpart</title>
         <meta charset="UTF-8">
         <style type="text/css">
         *{
@@ -13,6 +13,7 @@
              margin:auto;
              width:70%;
              height:500px;
+             position: relative;
          }
          #firstbox{
               grid-area:first;
@@ -27,7 +28,12 @@
             max-height:fit-content;
             border:2px solid aliceblue;
             /* box-shadow: 10px 40px rgb(182, 216, 245); */
-         }      
+         }  
+          #thirdbox{
+             display:grid;
+             grid-gap:30px;
+            
+          }     
          .firstimg{
              width:100%; 
              object-fit: contain; 
@@ -62,7 +68,8 @@
              text-align: center;
              font-size: 25px;
              font-weight: 650;
-             color:rgb(70, 70, 131)
+             color:rgb(70, 70, 131);
+             grid-area:p3;
          }
         #third-box-p> #underline{
              font-weight:bolder;
@@ -72,10 +79,7 @@
         #third-box-p >#billion{
             color:rgb(3, 3, 53);
         }
-        #thirdbox{
-          grid-area:third;
-          /* margin-top:20px; */
-        }
+       
         .uber{
             height:50px;
             width:200px;
@@ -84,13 +88,14 @@
             border:1px solid black;
         }
       #images{
+          /* display:grid; */
           width:90%;
           margin:auto;
           height:50px;
           /* border:1px solid black;     */
       }
       .margin-right{
-       margin-right:48px
+       margin-right:45px
       }
       #img1{
           grid-area:img1
@@ -121,6 +126,13 @@
                              "third third third third third third"
                              "img2 img2 img3 img3 img4 img4 "
 }
+#img1,#img5,#img6{
+    display:none
+}
+#thirdbox{
+        grid-template-columns:"p3 p3 p3 p3 p3 p3"
+                              "img1 img2 img3 img4 img5 img6"
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -128,26 +140,38 @@
     #second{
         grid-template-areas: "first first first first first first"
                              "sec sec sec sec sec sec"
-                             "third third third third third third"
-                             "img2 img2 img3 img3 img4 img4 "
+                            
 } 
+#thirdbox{
+        grid-template-areas:"p3 p3 p3 p3 p3 p3"
+                           "img1 img2 img3 img4 img5 img6"
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #second{
         grid-template-areas: "first first first sec sec sec"
-                              "third third third third third third"
-                              "img2 img2 img3 img3 img4 img4"
+                            
 } 
+#thirdbox{
+        grid-template-areas:"p3 p3 p3 p3 p3 p3"
+                           "img1 img2 img3 img4 img5 img6"
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #second{
         grid-template-areas: "first first first sec sec sec"
-                             "third third third third third third"
-                             "img1 img2 img3 img4 img5 img6"
+                           
+    }
+    #img1,#img5,#img6{
+    display:block
+}
+#thirdbox{
+        grid-template-areas:"p3 p3 p3 p3 p3 p3"
+                           "img1 img2 img3 img4 img5 img6"
     }
 } 
 
@@ -155,9 +179,13 @@
 @media only screen and (min-width: 1200px) {
     #second{
         grid-template-areas: "first first first sec sec sec"
-                             "third third third third third third"
-                             /* "img1 img2 img3 img4 img5 img6" */
+        }
+    #thirdbox{
+        grid-template-columns:"p3 p3 p3 p3 p3 p3";
+        grid-template-rows:"img1 img2 img3 img4 img5 img6"
     }
+  
+    
    
 }
 </style>
@@ -170,7 +198,7 @@
             <div class="seconddiv" id="secdiv12">
               <h2><strong>SendGrid API</strong></h2>
               <p>Integrate in minutes with our <strong>email API</strong><br/>and trust your emails reach the inbox.</p>
-             <button class="firstbutton">Learn More</button>
+             <a href="file:///C:/Users/HP/Desktop/practise%20code/firstpage1.html"><button class="firstbutton">Learn More</button></a>
            </div>
          </div>
 
@@ -179,9 +207,10 @@
             <div class="seconddiv" id="secdiv22">
                 <h2><strong>SendGrid Marketing Campaigns</strong></h2>
                 <p>Build meaningful connections with smart<br/><strong>email Marketing.</strong></p>
-                <button id="last"class="firstbutton">Learn More</button>
+                <a href="file:///C:/Users/HP/Desktop/practise%20code/firstpage1.html"><button id="last"class="firstbutton">Learn More</button></a>
             </div>
           </div>
+        
    
      
          <div id="thirdbox">
@@ -195,7 +224,8 @@
          <img class="margin-right" id="img6" src="instacart.png"/>
         </div>
         </div>
-        </div>
+    </div>
+       
         <script type="text/javascript">
         var firstbutton = document.querySelector("button");
         var secbutton=document.querySelector("#last");
@@ -226,6 +256,10 @@
         }
 
         firstbutton.addEventListener("mouseover",change1)
+        // function nextpage()
+        // {
+        //     firstbutton.createElement("a")
+        // }
         secbutton.addEventListener("mouseover",change2)
        
         function change11()
