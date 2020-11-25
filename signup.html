@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exam</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+        *{
+            font-family:calibri,monospace;
+            color:rgb(18, 20, 27)
+        }
+       
+         #firstdiv{
+            height:600px;
+            width:40%;
+            border:2px solid aliceblue;
+            grid-area:div1;
+            margin-left:10%;
+             position:relative;
+             float:left; 
+
+         }
+         .firstimg{
+             width:30%;
+             margin-left:34%;
+             object-fit: contain;
+             margin-top:20%;    
+         }
+         #button2{
+             width:100%;
+             height:70px;
+             position:absolute; 
+             bottom:0px;
+             left:0px;
+             margin-left:0px
+
+         }
+         #button1{
+             width:80px;
+             margin-left:40%;
+             background-color: blue;
+             color:white;
+             margin-top:70px;
+             margin-bottom:100px;
+         }
+         #seconddiv{
+            height:600px;
+            width:40%;
+            border:2px solid aliceblue;
+            grid-area:div1;
+            text-align:center;
+            /* margin-left:10%; */
+             /* position:relative;  */
+             float:left;
+         }
+         strong{
+             font-weight: lighter;
+             color:blue;
+         }
+         span{
+             color:blue;
+             margin-left:75%;
+             margin-right:0px;
+         }
+         input{
+             border:white;
+             width:50%; 
+             height:30px;
+             display:none; 
+         }
+         .firstimg ~ div {
+            
+             width:96%;
+             padding:2%;
+             text-align: center;
+             line-height:100%;
+             color:rgb(172, 11, 11);
+             background-color: rgb(253, 174, 174);
+             display:none;
+            
+         }
+         #form{
+             margin-top:20px;
+         }
+         i{
+             margin-right:20px;
+             
+             color:rgb(172, 11, 11);
+             /* margin-top:12px; */
+         }
+         #first{
+            width:94%;
+            padding:3%;
+            padding-top:2%;
+            padding-bottom:2%;
+             text-align: center;
+              line-height:90%; 
+             color:rgb(172, 11, 11);
+             display:none;
+             background-color: rgb(253, 174, 174);
+            
+         }
+         h1{
+             margin-top:35%;
+             font-weight: bolder;
+             color:rgb(32, 32, 48)
+         }
+         p{
+             line-height: 30px;
+             font-size: 20px;
+         }
+         #start{
+             background-color: rgb(240, 242, 252);
+             width:90%;
+             color:blue;
+             height:50px;
+             font-size:17px;
+             border-radius:1px;
+             border-color: blue;
+         }
+         #button1{
+             height:40px;
+             width:100px;
+             border-radius:3px;
+         }
+         
+        </style>
+    </head>
+    <body>
+        <div id="first"><i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>Your login was unsuccessful, please review the errors below.</div>
+        <div id="outerdiv">
+         <div id="firstdiv">
+          
+         <img class="firstimg" src="https://uiux.s3.amazonaws.com/logo/sg-twilio-lockup.svg"/><br/>
+         <div id="second">Your username or password is invalid!</div>
+         <form id="form">
+         <label onclick="appear()" for="user">Username</label><br/>
+         <input id="user" type="text"/>
+         <hr id="hr1"/>
+        
+         <label onclick="appear1()" for="user">Password</label><br/>
+         <input id="password" type="password"/>
+         <hr id="hr2"/>
+        </form>
+
+         <span>Forgot your password?</span><br/>
+         <button onclick="display()"type="submit" id="button1">Log in</button>
+         <button id="button2">Don't have a Twilio SendGrid account?<strong>Sign up now!</strong></button>
+        </div>
+        <vr/>
+          <div id="seconddiv">
+          <h1>Rise Above Your Competition This<br/> Holiday Season</h1>
+          <p>Don’t throw away your one-and-only shot—rise up this holiday<br/> season with these 8 quick-and-easy sending optimizations.</p>
+          <button id="start">Start Optimizing</button>
+        </div>
+        </div>
+      
+        
+        <script type="text/javascript">
+        var input = document.getElementById("user")
+        var inputval = document.getElementById("user").value
+          
+        var hr=document.getElementById("hr1")
+        function appear()
+        {
+            // 
+            input.style.display="block"
+            hr.style.backgroundColor="blue 3px"
+        }
+        var input1 = document.getElementById("password")
+        var input1val = document.getElementById("password").value
+        var hr1=document.getElementById("hr2")
+        function appear1()
+        {
+            // 
+            input1.style.display="block"
+            hr1.style.color="blue 3px"
+        }
+        var first=document.getElementById("first")
+        var second=document.getElementById("second")
+
+        function display()
+        {
+          if((inputval != " ") || (input1val != " " )){
+          first.style.display="block"
+          second.style.display="block"
+          }
+          else{
+            first.style.display="none"
+          second.style.display="none"
+          }
+
+        }
+        </script>
+        
+        
+    </body>
+</html>
