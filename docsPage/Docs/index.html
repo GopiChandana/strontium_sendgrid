@@ -28,6 +28,27 @@
         /* grid-gap: 10px; */
 
     }
+    .ApiBlockBackground{
+/*       background-color: :  linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%) 
+              100% 0 100% 0/3px 0 3px 0 stretch;
+*/
+  /*linear-gradient(95deg, lightgreen, black);*/
+    /*linear-gradient(45deg, lightgreen 13%, black );*/
+/*      background:
+    repeating-linear-gradient(to bottom right,
+      transparent, green 10%, green 20%);*/
+     /*         background:
+     linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%). */
+ /*   border-top: 10px solid red;
+border-bottom: 10px solid red;
+border-left-width: 0;
+border-right-width: 0;
+border-image: linear-gradient(to right, red, violet) 1 stretch;*/
+/*border-bottom: 6px double;
+    -webkit-border-image: -webkit-linear-gradient(left, #ff2828, #F27B26);*/
+/*background: linear-gradient(to bottom, #333, #4883a8 50%, #4883a8 75%);*/
+    background: linear-gradient(to left, white 10%, #4883a8 50%, #4883a8 55%);
+    }
 
     .ApiReference {
         display: flex;
@@ -38,24 +59,24 @@
         font-weight: bold;
         font-size: 23px;
         color:#489be8;
-
     }
 
     .ApiReference>div {
         border: 1px solid red;
         border: 2px solid white;
         padding: 12px;
-        width: 230px;
-        background-color: white 
+        width: 250px;
+        background-color: white;
+
     }
     .ApiReferenceBtn > p + input {
         color: white;
         background-color: dodgerblue;
         opacity: 0.1em;
-        width: 110px;
+        width: 120px;
         height: 40px;
         border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 7px;
     }
     .ApiReferenceBtn > p + input + input{
         color: white;
@@ -63,7 +84,7 @@
         width: 112px;
         height: 40px;
         border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 7px;
       }
     .ApiReferenceBtn > div {
         width: 242px;
@@ -148,14 +169,18 @@
         width: 1000px;
         margin: 12px 90px ;
         background-color:white; 
-        height: 432px;
+        height: 342px;
     }
     a{
-        border:1px solid black;
+        border:1px solid red;
         padding: 2px;
         border-radius: 10px;
         margin:23px;
         background-color: limegreen;
+        width: 120px;
+        height: 40px;
+        color: white;
+        text-align: center
     }
 
     p+.openSourceImg {
@@ -168,8 +193,8 @@
     }
 
     .OpenSourceimg {
-        width: 50px;
-        margin:20px 43px;
+        width: 30px;
+        margin:10px 30px;
         border-radius: 10px;
     }
    
@@ -301,23 +326,24 @@
     <div id="container">
         <div class="greenColorblock"></div>
         <h2> For Developer </h2>
-        
-        <div class="ApiBlock">
-            <div class="ApiReference">
-                <div class="ApiReferenceOne ApiReferenceBtn">
+        <div class="ApiBlockBackground">
+            <div class="ApiBlock">
+                <div class="ApiReference">
+                    <div class="ApiReferenceOne ApiReferenceBtn">
+                        <div></div>
+                        <p>Api Reference</p>
+                        <input type="submit" placeholder="Api" value="visit Api Reference" />
+                    </div>
                     <div></div>
-                    <p>Api Reference</p>
-                    <input type="submit" placeholder="Api" value="visit Api Reference" />
-                </div>
-                <div></div>
-                <div class="ApiReferencetwo ApiReferenceBtn">
-                    <div></div>
-                    <p>GetStarted</p>
-                    <input type="submit" value="Api" />
-                    <input type="submit" value="SMTP"/>
+                    <div class="ApiReferencetwo ApiReferenceBtn">
+                        <div></div>
+                        <p>GetStarted</p>
+                        <input type="submit" value="Api" />
+                        <input type="submit" value="SMTP"/>
+                    </div>
                 </div>
             </div>
-        </div>
+       
 
 <!-- open Sources Libraries -->
         <div id="openSourceLibraries">
@@ -333,6 +359,7 @@
                 <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
             </div>
         </div>
+     </div>
         <!--  -->
         <p></p>
         <h2>Feature Resources </h2>
@@ -378,6 +405,7 @@
                     <input type="submit" value="viewAll"/>
             </div>
         </div>
+
          <hr>
         <div>
             <img class="joyIcon" src="/home/milind/Desktop/joy.png">
@@ -399,7 +427,6 @@
                     <p>Event Webhook</p>
                     <p>Email Delivery</p>
                     <input type="submit" name="" value="viewAll">
-                    <!-- extra button -->                    
                 </div>
                 <div class="glossaryLibsorted2">
                     <img class="HelpSearch" src="/home/milind/Desktop/help-center-magnify.svg" alt="ti" title="img1">
@@ -422,7 +449,7 @@
             </div>
         </div>
     </div>
-<button><a href="file:///home/milind/Assignment1/copypro/status/index.html#">status</button>
+
 </body>
 
 </html>
