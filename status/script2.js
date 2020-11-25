@@ -83,6 +83,9 @@ function handleForm(){
 					 apiV7.append(p6,p15,p7);
 
 
+
+ 	 // ===================================================
+
  	 // second operator
 				var apiV8 = document.createElement('div');
 					 apiV8.style.display= 'flex';
@@ -141,12 +144,18 @@ function handleForm(){
 					mailSend.append(apiV5,apiV6,apiV7)
 					mailSend1.append(apiV8,apiV9,apiV10) 
 					
+
+			// plusheader.append(mailSend1)
+
+	     // mailSend.append(apiV5,apiV6,apiV7)
+	     // mailSend.append(apiV8,apiV9,apiV10)
+		// mailSend.append(apiV5,apiV6,apiV7,apiV8,apiV9,apiV10)
+		
+	 // plusheader.append(mailSend)
 	insider.append(plusheader,mailSend);
 	insider2.append(plusheader1,mailSend1);
 }
 
-
-// backhistory and powerstastus
 var BackHistory = document.getElementById('BackHistory');
 	BackHistory.style.display = "flex";
 	BackHistory.style.marginLeft= "109px";
@@ -159,7 +168,7 @@ poweredStatue.style.textDecoration="none";
 
 
 
-// footerPart
+
 
 var footers = document.getElementById('footers');
 	footers.style.color = "grey";
@@ -188,4 +197,12 @@ window.addEventListener('load',function(){
 	btn.addEventListener('click',handleForm)
 	var btn1 = document.getElementById('plus2');
 	btn1.addEventListener('click',handleForm);
+
+
+
 })
+
+
+
+
+
