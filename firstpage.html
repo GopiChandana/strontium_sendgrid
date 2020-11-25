@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>firstpage</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+        *{
+            font-family:calibri,monospace
+        }
+        body{
+            position:relative;
+        }
+        #firstpage{
+            display: grid;
+            grid-gap:30px;
+        }
+        nav{
+            background: black;
+            /* float:left */
+        }
+        #firstnav{
+            border:1px solid aliceblue;
+            /* margin-top:10px; */
+            height:105px;
+            width:1490px;
+            position: fixed;
+            float: left;
+            top:0;
+            grid-area:firstnav;
+           background-color: white;
+            
+        }
+         #secnav{
+             border:1px solid rgb(12, 12, 12); 
+            margin:auto;
+            margin-top:120px; 
+            height:56px;
+            width:70%;
+            position:absolute;
+            left:15% ;
+            grid-area:secnav; 
+        } 
+        .border{
+          height:100px;
+          width:fit-content;
+          padding-left:10px;
+          padding-right:10px;
+          /* border:1px solid black; */
+          background-color: white;
+          margin-left:30px;
+          line-height: 90px;
+          color:blue;
+          font-weight: bolder;
+          font-size:20px;
+        }
+        #cntctus,#signin{
+            color:rgb(81, 83, 92)
+        }
+        .float{
+            float:left
+        }
+        #nav-2{
+            height:104px;
+            width:50%;
+            /* border:2px solid red; */
+            float:left
+        }
+        #nav-1{
+            height:50px;
+            width:20%;
+            text-align: center;
+            font-size:large;
+            margin-top:25px;
+            margin-bottom:25px;
+            float:left;
+            object-fit: contain;
+            position:sticky;
+            top:50px;
+             /* border:1px solid black */
+        }
+        .border-bttm{
+            border-bottom: 4px ridge; 
+            border-bottom-color: blue;
+        }
+        .blckfont{
+            color:black;
+            
+        }
+        #navbutton{
+            color:white;
+            background-color: blue;
+            border:2px soild blue;
+            height:40px;
+            text-align: center;
+            line-height: 30px;
+            position:absolute;
+            top:25px;
+            right:20px;
+        }
+        #secnavimg{
+            height:32px;
+            width:32px;
+            object-fit: contain;
+            margin-top:13px;
+            margin-left:100px;
+            /* border:1px solid black; */
+        }
+        .email{
+            margin-left:20px;
+            line-height: 60px;
+            font-weight:bolder;
+            font-size:18px;
+            color:rgb(62, 62, 92)
+        }
+        .float1{
+            float:right;
+            margin-right: 20px;
+        }
+        #overview{
+            /* border:1px solid black; */
+            height:52px;
+            border-bottom:4px ridge;
+            border-bottom-color: blue;
+        }
+        h1{
+            margin-top:190px;
+            font-weight: 2000px;
+            font-size:40px;
+        }
+        #afternav{
+            text-align: center;
+        }
+        #afternav > p{
+            font-size:20px;
+        }
+        #afternav >button{
+            color:white;
+            background-color: blue;
+            height:50px;
+            width:150px;
+            font-size:20px;
+            font-weight:bold;
+            /* margin-top:120px; */
+        }
+        #afternav > #question{
+            font-size:15px;
+        }
+        #afternav > p >strong{
+            color:blue
+        }
+        #images{
+          width:90%;
+          margin:auto;
+          height:50px;
+          /* border:1px solid black;     */
+      }
+      .margin-right{
+          margin-right: 45px;
+      }
+      #goodbye{
+          margin-right:10px;
+          margin-left:100px; 
+          margin-top:20px;
+          height:300px;
+          width:524px;
+          text-align:left;
+          /* border:1px solid black;  */
+          float:left
+      }
+      #goodbye > h1{
+          margin-top : 40px;
+          margin-left:50px;
+      }
+      #goodbye > div {
+          font-size:20px;
+          margin-left:50px;
+      }
+      #goodbye > p >strong {
+          color:blue;
+          font-weight:bold;
+          font-size:20px;
+          margin-left:50px;
+      }
+       #goodbye-img{
+           height:306px;
+          width:195px;
+          object-fit: contain;
+          float: left;
+          /* border:1px solid black; */
+          margin-left:180px;  
+      } 
+     
+      #goodbyetext{
+          margin-left:50px;
+          margin-top:20px;
+          height:300px;
+          width:44%;
+          text-align:left;
+          /* border:2px solid blue; */
+           float:left 
+      }
+      #goodbyetext > img{
+          margin-top:20px;
+          float: left;
+      }
+      #goodbyetext > img ~ img{
+          clear:left;
+          float: left;
+      }
+      #goodbyetext > div {
+          margin-top:30px;
+          margin-left:10px;
+          float:left;
+      }
+      #goodbyetext > div > div{
+          color:rgb(56, 56, 85);
+          font-size:25px;
+          font-weight: bolder;
+      }
+      #goodbyetext > div > p{
+          color:rgb(56, 56, 85);
+          line-height: 40px;
+          font-size:20px;
+          
+      }
+      #goodbyetext > div ~ div{
+          margin-top:30px;
+          margin-left:10px;
+          float:left;
+      }
+      #bluebox{
+          width:100%;
+          height:600px;
+          background-color: blue;
+          margin-top:800px;   
+      }
+     #bluebox >div{
+         width:50%;
+         margin:auto;
+         text-align: center;
+         color:white;
+         /* margin-top:10px; */
+          border:1px solid blue;
+     }
+     #bluebox > div > h1{
+         font-size:60px;
+         font-weight: bolder;
+         margin-top:70px;
+     }
+     #bluebox > div > p {
+         font-weight: normal;
+         font-size:21px;
+     }
+     /* #bluebox > div > div {
+         border:1px solid black; 
+         height:40%;
+         max-width:745px;
+         margin:auto;
+         margin-top:40px;
+         object-fit:contain;
+         
+      } */ 
+     #bluebox > div > div > img {
+        object-fit:contain;
+     }
+     #firstbox{
+         display:flex;
+         flex-direction: row;
+         /* border:1px solid black; */
+         height:700px;
+         width:70%;
+         margin:auto;
+         margin-top:20px;
+     }
+     #firstbox > div {
+         width:60%;
+         /* border:1px solid black; */
+         max-height:650px;
+         margin:20px;
+     }
+     #firstboximg {
+        /* height:100%; */
+        /* object-fit:contain !important; */
+        max-width:100%;
+        background-image: url("https://d15tnd3q55f8nl.cloudfront.net/static/c3f9474f1f26a1fc9e84fc310ad8adac/21b0e/api1-03-1.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        /* max-height:450px; */
+     }
+     #secondboximg{
+        max-width:100%;
+        background-image: url("https://d15tnd3q55f8nl.cloudfront.net/static/a65c0b9fdb6287e2c326350179334a00/21b0e/api1-04.png");
+        background-size:contain;
+        background-repeat:no-repeat; 
+     }
+     #secondbox{
+         text-align:left;
+         position :relative;
+     }
+     #secondbox > h1{
+         margin-top:0px;
+     }
+     #secondbox > h3{
+         color:rgba(37, 39, 48, 0.877);
+         font-weight:bolder;
+         font-size:20px;
+     }
+     #secondbox > p{
+         font-size: 24px;
+     }
+     #i1{
+         position :absolute;
+         top:350px;
+        
+     }
+     #i1  + div {
+         margin-top :33px;
+         margin-left:50px;
+         font-size:18px;
+         line-height: 30px;
+     }
+     #i2{
+         position :absolute;
+         top:450px;
+        
+     }
+     #i2  + div {
+          margin-top :41px; 
+         margin-left:50px;
+         font-size:18px;
+         line-height: 30px;
+     }
+     #i3{
+         position :absolute;
+         top:550px;
+        
+     }
+     #i3  + div {
+         margin-top :41px;
+         margin-left:50px;
+         font-size:18px;
+         line-height: 30px;
+     }
+     #i4{
+         position :absolute;
+         top:650px;
+        
+     }
+     #i4  + div {
+         margin-top :41px;
+         margin-left:50px;
+         font-size:18px;
+         line-height: 30px;
+     }
+     #security{
+         font-size: 20px;
+         text-align: center;
+         font-weight: normal;
+         color:grey;
+         margin-top:50px;
+     }
+     #security + p {
+        text-align: center;
+        font-size: 50px;
+        color:rgb(5, 5, 41) 
+     }
+    #trust{
+        display:flex;
+        height:250px;
+        width:90%;
+        /* border:2px solid blue; */
+        margin:auto;
+
+
+    }
+    #trust > div{
+        width:30%;
+        height:90%;
+        margin:2%;
+        margin-top:0%;
+        /* text-align: center; */
+        /* border:1px solid deeppink; */
+    }
+    #trust > div > div,#trust > div > p{
+       text-align:left;
+      
+    }
+     #trust > div > :nth-child(1){
+         font-size: 30px;
+         color:rgb(51, 52, 63);
+         font-weight:bold;
+     }
+     #trust > div > p{
+         font-size:20px; 
+         font-weight: lighter;
+
+     }
+     #trust > div > :nth-child(3){
+         /* font-size: 30px; */
+         color:blue;
+         font-weight:bold;
+     }
+     .fab {
+		font-size: 22px;
+		padding: 22px;
+		margin: 21px;
+		border-radius: 5px;
+		box-shadow: 7px 4px 5px;
+		background-color: whitesmoke;
+		width: 120px;
+		color: grey;
+
+	}
+
+	#icons>p {
+		float: left;
+		padding: 62px auto;
+	}
+
+	.airbnbs {
+		grid-area: "airbnbs";
+	}
+
+	.ubers {
+		grid-area: "ubers";
+	}
+
+	.adns {
+		grid-area: "adns";
+	}
+
+	.yelps {
+		grid-area: "yelps";
+	}
+
+	.amazons {
+		grid-area: "amzons";
+	}
+    #header{
+        background-color: rgba(224, 233, 247, 0.795);
+		width: 1500px;
+		height: 520px;
+		margin: auto;
+		clear: both;
+        /* margin-top:150px; */
+        /* border:1px solid blue; */
+        font-family:calibri,monospace;
+        text-align:center;
+    }
+	/**/
+
+	#footer {
+		background-color: rgba(224, 233, 247, 0.795);
+		width: 1500px;
+		height: 520px;
+		margin: auto;
+		clear: both;
+        margin-top:50px;
+        font-family:calibri,monospace;
+        position: relative;
+	}
+
+	#Product {
+		/*display: flex;*/
+		display: grid;
+		grid-template-areas: "g1 g2 g3 g4 g5";
+		padding: 2px 12px;
+		margin: 15px 200px;
+		color: brown;
+	}
+
+	.AllProducts>h2 {
+		margin: 19px;
+		color: rgb(52, 52, 85);
+		font-size: 20px;
+        font-weight:bold;
+        text-align: left;
+	}
+
+	.footerContent > p {
+		color:rgb(54, 53, 66);
+		margin: 18px;
+		text-decoration: none;
+        text-align: left;
+	}
+
+
+	.footerProductBtn>p {
+		color: blue !important;
+		margin: 12px 15px;
+		/* border-radius: 5px; */
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 3px solid dodgerblue;
+        text-align:left;
+
+	}
+
+	.footerProductBtn>p>a {
+		text-decoration: none;
+		color: blue;
+        text-align:left;
+	}
+
+	.footerProductBtn>p>a:link {
+		color: blue;
+	}
+
+	.footerProductBtn>p>a:visited {
+		color: blue;
+	}
+
+	.footerProductBtn>p>a:hover {
+		color: navy;
+	}
+
+
+	hr {
+		width: auto;
+	}
+
+	i {
+		padding: 6px;
+	}
+
+	.footerSiteMap>div {
+		float: left;
+		color: rgb(54, 53, 66);
+		padding: 5px;
+		margin-left: 22px;
+		font-weight: italic;
+		display: grid;
+	}
+
+	.footerSiteIcon {
+		float: right;
+		margin-right: 25px;
+		padding: 10px;
+		font-size: 20px;
+	}
+    #sitemap{
+        margin-left:195px;
+    }
+
+    
+
+        </style>
+    </head>
+    <body >
+    <div id="firstpage">
+        <nav id="firstnav">
+           <img id="nav-1" src="https://uiux.s3.amazonaws.com/logo/sg-twilio-lockup.svg"/>
+           <div id="nav-2" >
+               <div class="border float border-bttm">Products</div>
+               <div class="border float border-bttm">Why SendGrid</div>
+               <div id="resrc" class="border float blckfont">Resources</div>
+               <div id="devlop" class="border float blckfont">Developers</div>
+               <div id="price" class="border float blckfont">Pricing</div>
+           </div>
+           <div>
+           <div id="cntctus" class="border float blckfont">Contact Us</div>
+           <div id="signin"  class="border float blckfont">Sign in</div>
+           </div>
+           <button id="navbutton" class="border float">Start for free</button>
+        </nav> 
+      
+        
+           <div id="secnav">
+              <img id="secnavimg" class="float" src="https://d15tnd3q55f8nl.cloudfront.net/static/56f99a12bdc7c058f07efafc8765b9d0/f451f/expert-services-icon.png"/>
+              <div class="float email">EMAIL API</div>   
+              <div class="float1 email">Features</div>
+              <div class="float1 email">Use cases</div>
+              <div id="overview"class="float1 email">Overview</div>
+          </div>
+
+          <div id="afternav">
+              <h1>Build for the new normal</h1>
+              <p>Adapt your communication strategy and strengthen customer trust with reliable email delivery at scale.</p>
+              <button>Try for free</button>
+              <p id="question">Looking for a custom plan?<strong>CONTACT SALES</strong> ---></p>
+              <div id="page1img1">
+              <img src="https://d15tnd3q55f8nl.cloudfront.net/static/4e652306ab3b6aae995c09a493bfed3e/c4c10/api1-01.png"/>
+              </div>
+              <h2>TRUSTED BY TOP COMPANIES FOR WORRY-FREE SENDING:</h2>
+              <div id="images">
+               <img class="margin-right"  src="uber.png"/>
+               <img class="margin-right"  src="spotify.png">
+               <img class="margin-right"  src="air.png"/>
+               <img class="margin-right"  src="yelp.png"/>
+               <img class="margin-right"  src="glass.png"/>
+               <img class="margin-right"  src="instacart.png"/>
+               </div>
+
+         <div id="goodbye">
+              <h1>Say goodbye to fire <br/>drills</h1>
+              <div>Build and monitor your email solution on a</div>
+              <div>trusted foundation—with technical and </div>
+              <div>strategic support when you need it most</div>
+              <p><strong>CHECK STATUS---></strong></p>
+         </div>
+
+         <div id="goodbyetext">
+              <img src="circle.png"/>
+              <div>
+                 <div>Proven deliverability</div>
+                 <p>You can rely on our globally distributed,<br/> cloud-based architecture.</p>
+              </div>
+             <img src="tri.png"/>
+              <div>
+                 <div>Purpose-built MTA</div>
+                 <p>Use the MTA to deliver 60 billion emails/mo <br/>for brands like Uber.</p>
+              </div>
+             <img src="half-circle.png"/>
+             <div>
+                <div>Time-saving features</div>
+                 <p>Fast troubleshooting, secure account management, and intuitive <br/>UI for data analysis.</p>
+             </div>
+         </div>
+
+         <div id="goodbye-img">
+            <img  src="table.png"/>
+         </div>
+  
+         <div id="bluebox">
+         <div>
+         <h1>By developers for developers</h1>
+         <p>Integrate and deliver in minutes with our RESTful APIs and SMTP, libraries to support <br/>your programming language, and interactive documentation.</p>
+         <div>
+             <img src="blueboximg.png"/>
+         </div>
+        </div>
+        </div>
+         
+        <div id="firstbox">
+         <div id="firstboximg">
+         </div>
+         <div id="secondbox">
+         <h1>Lost emails are lost customers</h1>
+         <h3>Getting your emails delivered is our #1<br/> priority.</h3>
+         <p>Achieve optimal inbox placement with<br/>streamlined tools and recommendations to make<br/> your program more effective.</p>
+         <hr/>
+         <div>
+            <i id="i1"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+            <div>SPF records, custom DKIM, feedback loops, and<br/> dedicated IP addresses</div>
+            <i id="i2"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+            <div>Consultation from delivery experts on M3AAWG, ESPC,<br/> DMA, and EEC</div>
+            <i id="i3"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+            <div>Partnerships with mailbox providers like Gmail, <br/>Microsoft and Verizon Media</div>
+
+         </div>
+         </div>
+        </div>
+
+        <div id="firstbox">
+           
+            <div id="secondbox">
+            <h1>Your teammates will<br/> thank you</h1>
+            <h3>One email platform for your whole team.</h3>
+            <p>Remove silos to reach shared goals. The email<br/>platform that empowers developers, marketers,<br/> your program more effective.and business leaders to collaborate seamlessly.
+
+            </p>
+            <hr/>
+            <div>
+               <i id="i1"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+               <div>Create templates in the UI and send<br/> programmatically</div>
+               <i id="i2"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+               <div>Configure account settings (permissions and<br/> segmentation)</div>
+               <i id="i3"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+               <div>Troubleshoot diagnostically to identify delivery <br/>issues</div>
+               <i id="i4"class="fa fa-check-circle" style="font-size:35px;color:rgb(54, 199, 86);"></i>
+               <div>Performance visibility for teammates across<br/> functions</div>
+   
+            </div>
+            </div>
+            <div id="secondboximg">
+            </div>
+           </div>
+           
+           <div id="security">WHY SENDGRID</div>
+           <p>Trust that your emails get <br/>delivered and your data is safe.</p>
+           <div id="trust">
+           <div>
+               <div>Deliverability</div>
+               <p>The tools and expertise you need<br/> to optimize your inbox delivery<br/> rate.</p>
+               <div>REACH THE BOX--></div>
+           </div>
+           <div>
+            <div>Scalability</div>
+            <p>Send on a world-class platform <br/>that delivers more than 80 billion<br/> emails every month.</p>
+            <div>SEND & GROW--></div>
+           </div>
+           <div>
+            <div>Expertise</div>
+            <p>Experts can help you optimize<br/> your program, troubleshoot, and<br/> resolve issues.</p>
+            <div>WORK WITH EXPERTS--></div>
+           </div>
+           <div>
+            <div>24/7 SUPPORT</div>
+            <p>Our support teams can give you<br/> information and guidance when <br/>you need it most.</p>
+            <div>HELP ME SEND--></div>
+           </div>
+           </div>
+           <div id="footer">
+            <div id="Product">
+                <div class="AllProducts allproduct1">
+                    <h2>Product</h2>
+                    <div class="footerContent ">
+                        <p>Email Marketing</p>
+                        <p>Email API</p>
+                        <p>Twilo Programmeable SMS</p>
+                        <p>Expert Services
+                        <p>
+                        <p>One Platform Solution</p>
+                        <p>Pricing</p>
+                    </div>
+                    <div class="footerProductBtn">
+                        <p><a href="#">VIEW ALL PRODUCTS<i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="AllProducts allproduct2">
+                    <h2>SendGrid is for</h2>
+                    <div class="footerContent">
+                        <p>startups</p>
+                        <p>Enterprises</p>
+                        <p>High Volume Senders</p>
+                        <p>Marketers
+                        </p>
+                        <p>Ecommerse</p>
+                        <p>Developers</p>
+                    </div>
+                    <div class="footerProductBtn">
+                        <p><a href="#">OUR CUSTOMER<i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="AllProducts allproduct3">
+                    <h2>Resources</h2>
+                    <div class="footerContent ">
+                        <p>Guides</p>
+                        <p>Blog</p>
+                        <p>Videos & Podcasts</p>
+                        <p>WebCasts
+                        <p>
+                        <p>Knowledge Center</p>
+                        <p>Status</p>
+                    </div>
+                    <div class="footerProductBtn">
+                        <p><a href="#">CONTACT SUPPORT<i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="AllProducts allproduct4">
+                    <h2>Developers</h2>
+                    <div class="footerContent ">
+                        <p>Start in 5 minute</p>
+                        <p>API Referrence</p>
+                        <p>SMTP Service</p>
+                        <p>Libraries
+                        <p>
+                        <p>Event Webhooks</p>
+                        <p>Integration & Partners </p>
+                    </div>
+                    <div class="footerProductBtn">
+                        <p><a href="#">GO TO DOCS<i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="AllProducts allproduct5">
+                    <h2>Company</h2>
+                    <div class="footerContent ">
+                        <p>About sendGrid</p>
+                        <p>Our Team</p>
+                        <p>Our Customer at SendGrid</p>
+                        <p>Press & Media
+                        <p>
+                        <p>One Platform Solution</p>
+                        <p>Trust and Security</p>
+                    </div>
+                    <div class="footerProductBtn">
+                        <p><a href="#">CONTACT US<i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <hr>
+            <div id="footerSite">
+                <div class="footerSiteMap">
+                    <div>
+                        <p id="sitemap">SiteMap</p>
+                    </div>
+                    <div>
+                        <p>Privacy Policy</p>
+                    </div>
+                    <div>
+                        <p>Terms</p>
+                    </div>
+                    <div>
+                        <p>Copywrite 2020 sendgrid</p>
+                    </div>
+                </div>
+                <div class="footerSiteMap footerSiteIcon">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-stack-overflow"></i>
+                    <i class="fa fa-github"></i>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </div> <!-- </div> firstpage -->
+ 
+        <script type="text/javascript">
+        var resrc=document.querySelector("#resrc")
+         console.log(resrc.textContent)
+        var devlop=document.querySelector("#devlop")
+        var price=document.querySelector("#price")
+        var cntctus=document.querySelector("#cntctus")
+        var signin=document.querySelector("#signin")
+        var navbutton=document.querySelector("#navbutton")
+        function changeborderclr()
+        {
+            console.log(event.target)
+           event.target.style.borderBottom = "4px ridge" ; 
+           event.target.style.borderBottomColor = "blue" ;
+           event.target.style.color = "blue" ;
+        }
+        resrc.addEventListener("mouseover",changeborderclr)
+        devlop.addEventListener("mouseover",changeborderclr)
+        price.addEventListener("mouseover",changeborderclr)
+        cntctus.addEventListener("mouseover",changeborderclr)
+        signin.addEventListener("mouseover",changeborderclr)
+        function navbttn()
+        {
+            event.target.style.backgroundColor="rgb(3, 3, 53)"
+        }
+        navbutton.addEventListener("mouseover",navbttn)
+        function navbttnOriginal()
+        {
+            event.target.style.backgroundColor="blue"
+        }
+        navbutton.addEventListener("mouseout",navbttnOriginal)
+        function changeborderclroriginal()
+        {
+           event.target.style.borderBottom = "none" ; 
+           event.target.style.borderBottomColor = "black" ;
+           event.target.style.color = "black" ;
+        }
+        resrc.addEventListener("mouseout",changeborderclroriginal)
+        devlop.addEventListener("mouseout",changeborderclroriginal)
+        price.addEventListener("mouseout",changeborderclroriginal)
+        cntctus.addEventListener("mouseout",changeborderclroriginal)
+        signin.addEventListener("mouseout",changeborderclroriginal)
+        
+        </script>
+        
+        
+    </body>
+</html>
