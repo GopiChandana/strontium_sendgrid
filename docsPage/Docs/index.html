@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" ,intial-scale=1.0>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+    #container {
+        background-color: whitesmoke;
+        width: 1200px;
+        height: auto;
+        color: white;
+        justify-content: center;
+    }
+
+    .ApiBlock {
+        /*border:1px solid green;*/
+        /* display: grid; */
+        justify-content: center;
+        /*border: 2px solid red;*/
+        width: 580px;
+        margin: 20px 310px;
+        /* grid-gap: 10px; */
+
+    }
+    .ApiBlockBackground{
+/*       background-color: :  linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%) 
+              100% 0 100% 0/3px 0 3px 0 stretch;
+*/
+  /*linear-gradient(95deg, lightgreen, black);*/
+    /*linear-gradient(45deg, lightgreen 13%, black );*/
+/*      background:
+    repeating-linear-gradient(to bottom right,
+      transparent, green 10%, green 20%);*/
+     /*         background:
+     linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%). */
+ /*   border-top: 10px solid red;
+border-bottom: 10px solid red;
+border-left-width: 0;
+border-right-width: 0;
+border-image: linear-gradient(to right, red, violet) 1 stretch;*/
+/*border-bottom: 6px double;
+    -webkit-border-image: -webkit-linear-gradient(left, #ff2828, #F27B26);*/
+/*background: linear-gradient(to bottom, #333, #4883a8 50%, #4883a8 75%);*/
+    background: linear-gradient(to left, white 10%, #4883a8 50%, #4883a8 55%);
+    }
+
+    .ApiReference {
+        display: flex;
+        padding: 22px;
+        margin: 20px;
+        text-align: center;
+        /*border: 2px solid white;*/
+        font-weight: bold;
+        font-size: 23px;
+        color:#489be8;
+    }
+
+    .ApiReference>div {
+        border: 1px solid red;
+        border: 2px solid white;
+        padding: 12px;
+        width: 250px;
+        background-color: white;
+
+    }
+    .ApiReferenceBtn > p + input {
+        color: white;
+        background-color: dodgerblue;
+        opacity: 0.1em;
+        width: 120px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 7px;
+    }
+    .ApiReferenceBtn > p + input + input{
+        color: white;
+        background-color: dodgerblue;
+        width: 112px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 7px;
+      }
+    .ApiReferenceBtn > div {
+        width: 242px;
+        height: 12px;
+        background-color:#65e28b;
+    }
+    .ApiReferenceBtn + div {
+        width: 242px;
+        height: 125px;
+        background-color:dodgerblue;
+    }
+    .ApiReferenceOne {
+        grid-area: "a";
+    }
+
+    .ApiReferencetwo {
+        grid-area: "b";
+    }
+
+    /*
+    @media only screen and (max-width:600px) { 
+        .ApiReference{
+            grid-template-areas: "a"
+                                 "b";
+        }}
+
+    @media only screen and (min-width:600px) {}
+
+    @media only screen and (min-width:768px) {}
+
+    @media only screen and (min-width:992px) {
+       
+    }
+
+    @media only screen and (mix-width:1200px) {}*/
+
+    #features {
+        /*border: 1px solid black;*/
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 1030px;
+        margin-left: 120px;
+        /*box-shadow: 12px 12px 10px 6px;*/
+    }
+
+    .featureheader {
+        /*green*/
+        border: 5px solid whitesmoke; 
+        /*box-shadow: 12px 12px;*/
+        background-color: white;
+        /*box-shadow: 12px 12px 6px 6px;*/
+        padding: 12px
+        width: 90px;
+        height: 395px;
+
+    }
+    .featureheader > i{
+        position: relative;
+        width: 12px;
+        color: blue;
+        font-size:48px;
+        top: 10px;
+        /*left: 32px;*/
+        text-align:center;
+    }
+    .featureheader > p + input {
+        color:dodgerblue;
+        width: 134px;
+        height: 32px;
+        border:1px solid;
+        border-radius: 5px;
+        box-shadow:1px 1px 1px 1px;
+    }
+
+
+    #openSourceLibraries {
+        /*box-shadow: 12px 12px 9px 6px;*/
+        padding: 10px;
+        border: 1px solid red;
+        width: 1000px;
+        margin: 12px 90px ;
+        background-color:white; 
+        height: 342px;
+    }
+    a{
+        border:1px solid red;
+        padding: 2px;
+        border-radius: 10px;
+        margin:23px;
+        background-color: limegreen;
+        width: 120px;
+        height: 40px;
+        color: white;
+        text-align: center
+    }
+
+    p+.openSourceImg {
+        margin: 40px 240px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: white;
+
+    }
+
+    .OpenSourceimg {
+        width: 30px;
+        margin:10px 30px;
+        border-radius: 10px;
+    }
+   
+    .openSourceImg2{
+        height:  220px;
+        object-fit: cover;
+        margin:20px 120px;
+
+    }
+
+
+    .TermsAndCondition {
+        /*margin: 2px;*/
+        text-align: center;
+        justify-content: center;
+        color: grey;
+        font-size: 15px;
+    }
+
+    img+.TermsAndCondition {
+        display: flex;
+        /* padding: 2px; */
+    }
+
+    .TermsAndCondition>p {
+        margin-left: 70px;
+    }
+    .glossary{
+        background-color: #3edc83;
+        padding: 21px;
+    }
+
+    .glossaryLibSorted {
+        display: flex;
+    }
+    /**/
+    .glossaryLibsorted1>h2{
+        color: #294c74;
+        text-align:left;
+        padding-left: 42px;
+    }
+     .glossaryLibsorted1>p{
+        padding-left: 42px;
+        color: #80afe9;
+        text-align:left;
+    }
+
+    .glossaryLibSorted>div {
+        color: blue;
+    }
+
+    p+h2 {
+        color: #294661;
+        text-align: center;
+        font-size: 23px;
+    }
+    h2~p{
+        color: #94a8e9;
+        text-align: center;
+    }
+    p+h6{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+    }
+    p+p{
+        text-align: center;
+    }
+    h2{
+        font-weight: bold;font-size: 62px;
+        text-align: center;
+        color: #294661
+    }
+    i+h2{
+        color: #294661;
+        font-size: 25px;
+    }
+
+
+    .glossaryLibsorted1 {
+        margin-left: 220px;
+        border: 1px solid #f4f6f7;
+        box-shadow: 6px 6px 6px 6px;
+        font-size: 17px;
+        width: 390px;
+        height: 335px;
+        background-color: white;
+    }
+    .glossaryLibsorted1 >  input{
+        color: #294661;
+        text-align: center;
+        margin-left: 29px;
+        width: 124px;
+        height: 29px;
+        border-radius: 5px;
+        background-color: #489be8
+    }
+    .glossaryLibsorted1 > img {
+        /*border:1px solid red;*/
+        width: 120px;height: 220px;;
+    }
+    .glossaryLibsorted2{
+     width: 120px;
+    }
+    .glossary{
+        border:1px solid red;
+        padding: 19px;
+    }
+    .glossary ~ div{
+        background-color: white;
+        margin-top: 60px;
+        color: red;
+        /*border: 1px solid red;*/
+    }
+    .HelpSearch{
+        margin: -21px 90px; width: 152px;padding: 2px;height: 232px;
+    }
+    .joyIcon{
+        width: 320px;margin-left: 440px;
+        padding: 12px;
+        position: relative;
+        top: 15px;
+
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="greenColorblock"></div>
+        <h2> For Developer </h2>
+        <div class="ApiBlockBackground">
+            <div class="ApiBlock">
+                <div class="ApiReference">
+                    <div class="ApiReferenceOne ApiReferenceBtn">
+                        <div></div>
+                        <p>Api Reference</p>
+                        <input type="submit" placeholder="Api" value="visit Api Reference" />
+                    </div>
+                    <div></div>
+                    <div class="ApiReferencetwo ApiReferenceBtn">
+                        <div></div>
+                        <p>GetStarted</p>
+                        <input type="submit" value="Api" />
+                        <input type="submit" value="SMTP"/>
+                    </div>
+                </div>
+            </div>
+       
+
+<!-- open Sources Libraries -->
+        <div id="openSourceLibraries">
+            <p></p>
+            <h2>open Liberaries </h2>
+            <p>prebuild libraries and sample code for popular languages</p>
+            <div class="openSourceImg">
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1">
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+                <a href="#"><img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"></a>
+            </div>
+        </div>
+     </div>
+        <!--  -->
+        <p></p>
+        <h2>Feature Resources </h2>
+        <div id="features">
+            <div class="featureheader">
+                    <i class="fa fa-telegram"></i>
+                    <!-- <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"> -->
+                    <h2>sending</h2>
+                    <p>Curl Examples </p>
+                    <p>sandbox</p>
+                    <p>How send </p>
+                    <p>How to send a SMTP EMAIL</p>
+                    <input type="submit" />
+            </div>
+            <div class="featureheader">
+                     <i class="fa fa-telegram"></i>
+                    <!-- <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"> -->
+                    <h2>sending</h2>
+                    <p>Curl Examples </p>
+                    <p>sandbox</p>
+                    <p>How send </p>
+                    <p>How to send a SMTP EMAIL</p>
+                    <input type="submit" placeholder="" value="viewAll" />
+            </div>
+            <div class="featureheader">
+                    <i class="fa fa-telegram"></i>
+                    <!-- <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"> -->
+                    <h2>sending</h2>
+                    <p>Curl Examples </p>
+                    <p>sandbox</p>
+                    <p>How send </p>
+                    <p>How to send a SMTP EMAIL</p>
+                    <input type="submit" value="viewAll"/>
+            </div>
+            <div class="featureheader">
+                    <i class="fa fa-telegram"></i>
+                    <!-- <img class="OpenSourceimg" src="/home/milind/php.svg" alt="ti" title="img1"> -->
+                    <h2>sending</h2>
+                    <p>Curl Examples </p>
+                    <p>sandbox</p>
+                    <p>How send </p>
+                    <p>How to send a SMTP EMAIL</p>
+                    <input type="submit" value="viewAll"/>
+            </div>
+        </div>
+
+         <hr>
+        <div>
+            <img class="joyIcon" src="/home/milind/Desktop/joy.png">
+        </div>
+
+<!-- glossary -->
+
+        <div class="glossary">
+           
+            <p></p>
+            <h2>Glossary</h2>
+            <p></p>
+            <h6>Not sure what something means ? Find terms from our library sortes A_Z</h6>
+            <p></p>
+          <div class="glossaryLibSorted"> 
+                <div class="glossaryLibsorted1">
+                    <h2>Feature</h2>
+                    <p>Sender Authentication</p>
+                    <p>Event Webhook</p>
+                    <p>Email Delivery</p>
+                    <input type="submit" name="" value="viewAll">
+                </div>
+                <div class="glossaryLibsorted2">
+                    <img class="HelpSearch" src="/home/milind/Desktop/help-center-magnify.svg" alt="ti" title="img1">
+                </div>
+            </div>
+        </div>
+<!-- opensource Img -->
+        <div>
+            <img class="openSourceImg" src="/home/milind/Desktop/imageSendGrid.png" alt="ti" title="img1" style="margin-left: 650px">
+            <div class="TermsAndCondition">
+                <p>About </p>
+                <p>|</p>
+                <p>Terms</p>
+                <p>|</p>
+                <p>Copywrite</p>
+                <p>|</p>
+                <p>All Right Resserved</p>
+                <p>|</p>
+                <p>SendGrid</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

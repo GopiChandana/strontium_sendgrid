@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>footerDesign</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" ,intial-scale=1.0>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/home/milind/Assignment1/pro/strontium_sendgrid/style.css"> -->
+	<!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+</head>
+
+<style type="text/css">
+	body {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 14px;
+	}
+
+
+	.fab {
+		font-size: 22px;
+		padding: 22px;
+		margin: 21px;
+		border-radius: 5px;
+		box-shadow: 7px 4px 5px;
+		background-color: whitesmoke;
+		width: 120px;
+		color: grey;
+
+	}
+
+	#icons>p {
+		float: left;
+		padding: 62px auto;
+	}
+
+	.airbnbs {
+		grid-area: "airbnbs";
+	}
+
+	.ubers {
+		grid-area: "ubers";
+	}
+
+	.adns {
+		grid-area: "adns";
+	}
+
+	.yelps {
+		grid-area: "yelps";
+	}
+
+	.amazons {
+		grid-area: "amzons";
+	}
+
+	/**/
+
+	#footer {
+		background-color: #e6e6ff;
+		width: 1240px;
+		height: 520px;
+		margin: 20px;
+		clear: both;
+	}
+
+	#Product {
+		/*display: flex;*/
+		display: grid;
+		grid-template-areas: "g1 g2 g3 g4 g5";
+		padding: 2px 12px;
+		margin: 12px 12px;
+		color: brown;
+	}
+
+	.AllProducts>h2 {
+		margin: 19px;
+		color: blue;
+		font-size: 17px;
+	}
+
+	.footerContent>p>a {
+		color: blue;
+		margin: 18px;
+		text-decoration: none;
+	}
+
+
+	.footerProductBtn>button {
+		color: blue;
+		margin: 12px 15px;
+		border-radius: 5px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 3px solid dodgerblue;
+
+	}
+
+	.footerProductBtn>button>a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	.footerProductBtn>button>a:link {
+		color: pink;
+	}
+
+	.footerProductBtn>button>a:visited {
+		color: blue;
+	}
+
+	.footerProductBtn>button>a:hover {
+		color: orange;
+	}
+
+
+	hr {
+		width: auto;
+	}
+
+	i {
+		padding: 6px;
+	}
+
+	.footerSiteMap>div {
+		float: left;
+		color: blue;
+		padding: 5px;
+		margin-left: 22px;
+		font-weight: italic;
+		display: grid;
+	}
+
+	.footerSiteIcon {
+		float: right;
+		margin-right: 125px;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+
+	.allproduct1 {
+		grid-area: g1
+	}
+
+	.allproduct2 {
+		grid-area: g2
+	}
+
+	.allproduct3 {
+		grid-area: g3
+	}
+
+	.allproduct4 {
+		grid-area: g4
+	}
+
+	.allproduct5 {
+		grid-area: g5
+	}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) and (max-width: 1200px) {
+		.Product {
+			display: grid;
+			grid-template-areas: "g1"
+				"g2"
+				"g3"
+				"g4"
+				"g5";
+		}
+	}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) and (max-width:1200) {
+		.AllProducts {
+			grid-template-areas: "g1 g2"
+				"g3 g4"
+				"g5 .";
+		}
+	}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) and (max-width:1200) {
+		.AllProducts {
+			grid-template-areas: "g1 g2 ."
+				"g3 g4 g5";
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.Product {
+			grid-template-areas: "g1 g2 g3"
+				"g4 g5 .";
+		}
+	}
+</style>
+
+<body>
+	<div id="middelPartIcon">
+		<div id="icons">
+			<p><i class="airbnbs fab fa-uber">airbnb</i></p>
+			<p><i class="ubers fab fa-uber">uber</i></p>
+			<p><i class="adns fab fa-adn">adn</i></p>
+			<p><i class="yelps fab fa-yelp">yelp</i></p>
+			<p><i class="amazons fab fa-amazon">amazon</i></p>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="Product">
+			<div class="AllProducts allproduct1">
+				<h2>Product</h2>
+				<div class="footerContent ">
+					<p><a href="#">Email Marketing</a></p>
+					<p><a href="#">Email API</a></p>
+					<p><a href="#">Twilo Programmeable SMS</a></p>
+					<p><a href="#">Expert Services</a>
+					<p>
+					<p><a href="#">One Platform Solution</a></p>
+					<p><a href="#">Pricing</a></p>
+				</div>
+				<div class="footerProductBtn">
+					<button><a href="#">VIEW ALL PRODUCT<i class="fa fa-arrow-right"
+								aria-hidden="true"></i></a></button>
+				</div>
+			</div>
+			<div class="AllProducts allproduct2">
+				<h2>SendGrid is for</h2>
+				<div class="footerContent">
+					<p><a href="#">startups</a></p>
+					<p><a href="#">Enterprises</a></p>
+					<p><a href="#">High Volume Senders</a></p>
+					<p><a href="#">Marketers</a>
+					<p>
+					<p><a href="#">Ecommerse</a></p>
+					<p><a href="#">Developers</a></p>
+				</div>
+				<div class="footerProductBtn">
+					<button><a href="#">OUR CUSTOMER<i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+				</div>
+			</div>
+			<div class="AllProducts allproduct3">
+				<h2>Resources</h2>
+				<div class="footerContent ">
+					<p><a href="#">Guides</a></p>
+					<p><a href="#">Blog</a></p>
+					<p><a href="#">Videos & Podcasts</a></p>
+					<p><a href="#">WebCasts</a>
+					<p>
+					<p><a href="#">Knowledge Center</a></p>
+					<p><a href="#">Status</a></p>
+				</div>
+				<div class="footerProductBtn">
+					<button><a href="#">CONTACT SUPPORT<i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+				</div>
+			</div>
+			<div class="AllProducts allproduct4">
+				<h2>Developers</h2>
+				<div class="footerContent ">
+					<p><a href="#">Start in 5 minute</a></p>
+					<p><a href="#">API Referrence</a></p>
+					<p><a href="#">SMTP Service</a></p>
+					<p><a href="#">Libraries</a>
+					<p>
+					<p><a href="#">Event Webhooks</a></p>
+					<p><a href="#">Integration & Partners </a></p>
+				</div>
+				<div class="footerProductBtn">
+					<button><a href="#">GO TO DOCS<i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+				</div>
+			</div>
+			<div class="AllProducts allproduct5">
+				<h2>Company</h2>
+				<div class="footerContent ">
+					<p><a href="#">About sendGrid</a></p>
+					<p><a href="#">Our Team</a></p>
+					<p><a href="#">Our Customer at SendGrid</a></p>
+					<p><a href="#">Press & Media</a>
+					<p>
+					<p><a href="#">One Platform Solution</a></p>
+					<p><a href="#">Trust and Security</a></p>
+				</div>
+				<div class="footerProductBtn">
+					<button><a href="/home/milind/Assignment1/pro/strontium_sendgrid/docsPage/Docs/index.html">CONTACT US<i class="fa fa-arrow-right" aria-hidden="true"></i></a></button>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<div id="footerSite">
+			<div class="footerSiteMap">
+				<div>
+					<p>SiteMap</p>
+				</div>
+				<div>
+					<p>Privacy Policy</p>
+				</div>
+				<div>
+					<p>Terms</p>
+				</div>
+				<div>
+					<p>Copywrite 2020 sendgrid</p>
+				</div>
+			</div>
+			<div class="footerSiteMap footerSiteIcon">
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-stack-overflow"></i>
+				<i class="fa fa-github"></i>
+			</div>
+		</div>
+	</div>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+
+</html>

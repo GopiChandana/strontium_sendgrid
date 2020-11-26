@@ -1,0 +1,77 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+}
+
+#footer{
+	background-color: #e6e6ff;
+	width: 1240px;
+	height: 520px;
+	margin: 20px;
+}
+#Product{
+	display: flex;
+	padding: 2px 12px;
+	margin: 12px 12px;
+	color:brown;
+}
+.AllProducts > h2{
+	margin: 19px;
+	color: blue;
+	font-size: 17px;
+}
+
+.footerContent > p > a{
+	color: blue;
+	margin:18px ;
+	text-decoration: none;
+}
+
+
+.footerProductBtn > button{
+	color: blue;
+	margin: 12px 15px;
+	border-radius: 5px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid dodgerblue;
+
+}
+
+.footerProductBtn > button >  a{
+	text-decoration: none;
+ 	color: blue;
+}
+
+.footerProductBtn > button >  a:link{
+ 	color: pink;
+}
+
+.footerProductBtn > button > a:visited{
+ 	color: blue;
+}
+.footerProductBtn > button >  a:hover{
+ 	color: orange;
+}
+
+
+hr{
+	width:auto;
+}
+i{
+	padding: 6px;
+}
+.footerSiteMap > div{
+	float: left;
+	color: blue;
+	padding: 5px;
+	margin-left: 22px;
+	font-weight: italic;
+}
+.footerSiteIcon{
+	float: right;
+	margin-right: 125px;
+	padding: 10px;
+	font-size: 20px;
+}
