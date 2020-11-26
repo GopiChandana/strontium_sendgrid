@@ -141,45 +141,44 @@ function handleForm(){
 					mailSend.append(apiV5,apiV6,apiV7)
 					mailSend1.append(apiV8,apiV9,apiV10) 
 					
-	insider.append(plusheader,mailSend);
-	insider2.append(plusheader1,mailSend1);
+					insider.append(plusheader,mailSend);
+					insider2.append(plusheader1,mailSend1);
 }
 
 
-// backhistory and powerstastus
-var BackHistory = document.getElementById('BackHistory');
-	BackHistory.style.display = "flex";
-	BackHistory.style.marginLeft= "109px";
-	
-var poweredStatue = document.getElementById('poweredStatue');
-poweredStatue.style.marginLeft= "700px";
-poweredStatue.style.color= "#7baec5";
-poweredStatue.style.textDecoration="none";
+				// backhistory and powerstastus
+				var BackHistory = document.getElementById('BackHistory');
+					BackHistory.style.display = "flex";
+					BackHistory.style.marginLeft= "109px";
+					
+				var poweredStatue = document.getElementById('poweredStatue');
+					poweredStatue.style.marginLeft= "700px";
+					poweredStatue.style.color= "#7baec5";
+					poweredStatue.style.textDecoration="none";
 
 
 
 
-// footerPart
+				// footerPart
+				var footers = document.getElementById('footers');
+					footers.style.color = "grey";
+					footers.style.display = "flex"
+					footers.style.marginLeft = "610px";
+					footers.style.marginTop= "140px";
 
-var footers = document.getElementById('footers');
-	footers.style.color = "grey";
-	footers.style.display = "flex"
-	footers.style.marginLeft = "610px";
-	footers.style.marginTop= "140px";
-
-	var sendGrid = document.createElement('p')
-	sendGrid.textContent = "2020@copywrite"
-	sendGrid.style.marginLeft = "10px";
-	var forDeveloper = document.createElement('p')
-	forDeveloper.textContent = "forDeveloper"
-	forDeveloper.style.marginLeft = "50px";
-	var knowledge = document.createElement('p')
-	knowledge.textContent = "knowledge"
-	knowledge.style.marginLeft = "50px";
-	var support = document.createElement('p')
-	support.textContent = "support"
-	support.style.marginLeft = "50px";
-	footers.append(sendGrid,forDeveloper,knowledge,support)
+					var sendGrid = document.createElement('p')
+					sendGrid.textContent = "2020@copywrite"
+					sendGrid.style.marginLeft = "10px";
+					var forDeveloper = document.createElement('p')
+					forDeveloper.textContent = "forDeveloper"
+					forDeveloper.style.marginLeft = "50px";
+					var knowledge = document.createElement('p')
+					knowledge.textContent = "knowledge"
+					knowledge.style.marginLeft = "50px";
+					var support = document.createElement('p')
+					support.textContent = "support"
+					support.style.marginLeft = "50px";
+					footers.append(sendGrid,forDeveloper,knowledge,support)
 
 
 
@@ -188,4 +187,5 @@ window.addEventListener('load',function(){
 	btn.addEventListener('click',handleForm)
 	var btn1 = document.getElementById('plus2');
 	btn1.addEventListener('click',handleForm);
+	
 })
