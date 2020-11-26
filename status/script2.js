@@ -100,8 +100,8 @@ function handleForm(){
 					 p9.style.href = "operation";
 					 p9.style.marginLeft="530px"
 					 p9.style.textDecoration = "none"
- 					 var p21 = document.createElement("img");
-					 p21.src="/home/milind/Desktop/question.png";
+ 					 var p20 = document.createElement("img");
+					 p20.src="/home/milind/Desktop/question.png";
 					 apiV8.append(p8,p21,p9);
 
 
@@ -121,7 +121,7 @@ function handleForm(){
 					 p11.style.marginLeft="530px"
 					 p11.style.textDecoration = "none"
 					 var p21 = document.createElement("img");
-					 p21.src="/home/milind/Desktop/question.png";
+					 p21.src="";
 					 apiV9.append(p10,p21,p11);
 
 				var apiV10 = document.createElement('div');
