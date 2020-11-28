@@ -37,7 +37,7 @@ html, css, javascript, github
 ```
 ## Usage
 ```bash 
-Go to website http://sendgrid.com. Sign in if your account is already and go to your login profile. 
+Go to website http://sendgrid.com. SignIn , If your account is already and go to your login profile. 
 Then different modes are available.you use free emails and emails for understanding.if you want to  
 increase email and email Apis size.Main page price plan you can scroll  see button see plan and check 
 which one is suitable which estimate or pro or advanced.click on your plan. See on plan you learn and 
