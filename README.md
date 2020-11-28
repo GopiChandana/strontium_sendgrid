@@ -1,9 +1,9 @@
 
 <br />
 <p align="center">
-  <div >TEAM STRONTIUM <br/><br/>
-    <img src="https://th.bing.com/th/id/OIP.GMwvQOnyX8hDhLQjsGNa8QHaFP?w=226&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="Logo" width="80" height="80">
-  </div>
+  <div align="center">TEAM STRONTIUM <br/><br/> </div>
+    <img align="center"src="https://th.bing.com/th/id/OIP.GMwvQOnyX8hDhLQjsGNa8QHaFP?w=226&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="Logo" width="80" height="80">
+ 
 
   <h3 align="center">SendGrid Project</h3>
 
