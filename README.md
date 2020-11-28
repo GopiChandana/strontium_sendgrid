@@ -1,12 +1,12 @@
 # TEAM - Strontium
 ```
 Strotium send grid 
-This website is email based website.
-you can email by different purpose.
-Even gives you different type of icons.
-Different mode to pay your amount.
-Its give you free email but if you are use more
- then it give you  pro advanded payment mode. increase your email.
+This website is basically email and email Apis based website. you 
+can email customer for different purpose.strotium gives you different
+type of icons which are helpfull to you.Different types of mode available 
+there you attached your email apis.Its give you better performance but if
+you are use more then it give you  pro, advanded payment mode to increase 
+your email and email Apis.
 ```
 ## links
 ```
@@ -35,25 +35,23 @@ https://morguefile.com/
 ## tools
 Mostly work on 
 ```bash
-html css javascript 
+html css javascript, github, 
 ```
 ## Usage
 ```bash 
- go website http://sendgrid.com.
- sign in if your account and go to your profile.
- login profile
-then different modes are available.if you want to 
-increase email size.you can scroll and check which  
-one is suitable which pro or advanced.click on submit_pro button. Now if you more then    
-go to main page and see different email Apis.
- see there you learn and check how to use email Apis.
+ Go to website http://sendgrid.com. Sign in if your account is already and go to your login profile. 
+Then different modes are available.you use free emails and emails for understanding.if you want to  
+increase email and email Apis size.Main page price plan you can scroll  see button see plan and check 
+which one is suitable which estimate or pro or advanced.click on your plan. See on plan you learn and 
+check how to use email Apis.
 ```
 ## Contributing
-Strotium work as Team , Each part are distributed indivisually.everyone work html,css , javascript part.i work on contact us and price sales and main page footer part.
+Strotium work as Team , Each part are distributed indivisually.everyone work html,css , javascript part.
+I work on contact_us and price_sales and main page footer _part.
 Gop----------
 amargjit----------
+
 ## website Link
 http://sendGrid.com
 ## License
 [masai](https://masai.com/licenses/masai/2020)
-	
