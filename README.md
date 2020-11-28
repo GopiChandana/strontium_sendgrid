@@ -1,4 +1,4 @@
-<!-- PROJECT LOGO -->
+
 <br />
 <p align="center">
   <a href="https://github.com/GopiChandana/strontium_sendgrid/tree/main">
@@ -18,7 +18,7 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
+
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
@@ -40,7 +40,7 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [SendGrid](https://sendgrid.com/)
