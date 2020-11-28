@@ -1,6 +1,6 @@
 # TEAM - Strontium
 ```
-Strotium send grid 
+send_grid_Email. 
 This website is basically email and email Apis based website. you 
 can email customer for different purpose.strotium gives you different
 type of icons which are helpfull to you.Different types of mode available 
@@ -14,9 +14,7 @@ https://w3school.com
 https://stackoverflow.com
 https://font-awesome.com
 http://color.com
- <link rel="stylesheet" 
- href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 https://webgradients.com/
 https://coolors.co/
 https://webgradients.com/
@@ -35,11 +33,11 @@ https://morguefile.com/
 ## tools
 Mostly work on 
 ```bash
-html css javascript, github, 
+html, css, javascript, github
 ```
 ## Usage
 ```bash 
- Go to website http://sendgrid.com. Sign in if your account is already and go to your login profile. 
+Go to website http://sendgrid.com. Sign in if your account is already and go to your login profile. 
 Then different modes are available.you use free emails and emails for understanding.if you want to  
 increase email and email Apis size.Main page price plan you can scroll  see button see plan and check 
 which one is suitable which estimate or pro or advanced.click on your plan. See on plan you learn and 
