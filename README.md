@@ -1,7 +1,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/GopiChandana/strontium_sendgrid/tree/main">
+  <a href="https://github.com/GopiChandana/strontium_sendgrid/tree/main">TEAM STRONTIUM <br/>
     <img src="https://th.bing.com/th/id/OIP.GMwvQOnyX8hDhLQjsGNa8QHaFP?w=226&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="Logo" width="80" height="80">
   </a>
 
