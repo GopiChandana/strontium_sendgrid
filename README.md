@@ -24,8 +24,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+  </li>
         <li><a href="#built-with">Built With</a></li>
-    </li>
+   
     <li>
       <a href="#Clone">Clone Repo</a>
     </li>
